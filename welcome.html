@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <script defer src="public/fontawesome-6-1-1/js/all.js"></script>
+    
+    <title>Babiigo</title>
+</head>
+<body>
+  <script src="public/jquery/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="public/jquery/jquery-ui.min.css" type="text/css"/>
+	<script src="public/jquery/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+	<script src="public/momentjs/moment.min.js" type="text/javascript"></script>
+	<script src="public/sweetalertjs/sweetalert.min.js" type="text/javascript"></script>
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
+></script>
+
+  <style>
+
+    .card > .card-text > .btn-group .btn{
+        padding: 0px 22px !important;
+    }
+
+    #btn_langue:hover{
+      border: 0 !important; 
+      background-color:rgba(225, 223, 223, 0.527) !important; 
+      border-radius: 50px !important; 
+      width: 35px !important; 
+      height: 35px !important;
+    }
+  </style>
+  <div class="modal fade bd-example-modal-lg" id="ModalConnexion" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                <h4 class="modal-title" id="">Connexion ou inscription</h4>
+            </div>
+            <div class="modal-body ui-front">
+                <div class="container">
+                  <div class="_je2ned">
+                    <h3 class="_u72b34">Bienvenue sur Babiigo</h3>
+                    <form action="POST">
+                      <div style="border-radius: 8px;">
+                        <div style="display: flex;">
+                            <div style="position: relative;flex: 1 1 0%">
+                              <div class="_ey3tib">
+                                <label class="_19nw8j1" for="country" style="border: 1px solid #00000047;border-radius: 10px 10px 0 0;">
+                                  <div class="_zhftk97">
+                                    <div class="_11hx67x">
+                                      Pays/Région
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <select class="_1iwku6d" id="country">
+                                      <option value="">Afghanistan</option>
+                                      <option value="">Afrique du sud</option>
+                                      <option value="">Albanie</option>
+                                    </select>
+                                  </div>
+                                </label>
+                                <div class="_lmil0">
+                                  <i style="display: block;fill: none;height: 16px;width: 16px;stroke: currentcolor;stroke-width: 4;overflow: visible;" class="fa-solid fa-chevron-down"></i>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                          <div style="flex: 2 1 0%; position:relative"></div>
+                      </div>
+                      </div>
+                    </form>
+                    <div style="font-size:10px">
+                      Nous vous appellerons ou vous enverrons un SMS pour confirmer votre numéro. Les frais standards d'envoi de messages et d'échange de données s'appliquent. <a href="#" style="color: black;"><b style="text-decoration:underline ;">Politique de confidentialité</b></a>
+                    </div>
+                    <div class="d-grid gap-2 col">
+                      <button class="btn btn-continuer" type="button">Continuer</button>
+                      <div class="_1x0diny1">
+                        <div class="_16fq9mb">
+                          ou
+                        </div>
+                      </div>
+                      <button class="btn btn-outline-dark" type="button">
+                          <div class="_1a2vq1h">
+                            <div style="flex: 0 1 0%;">
+                              <i style="font-size: 20px !important;display: block;color: rgb(60, 60, 254);" class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div style="flex: 1 1 0% !important; font-weight: 500 !important;">
+                              Continuer avec Facebook
+                            </div> 
+                          </div>
+                      </button>
+                      <button class="btn btn-outline-dark" type="button">
+                        <div class="_1a2vq1h">
+                          <div style="flex: 0 1 0%;">
+                            <i style="font-size: 20px !important;display: block;" class="fa-brands fa-google"></i>
+                          </div>
+                          <div style="flex: 1 1 0% !important; font-weight: 500 !important;">
+                            Continuer avec Google
+                          </div> 
+                        </div>
+                    </button>
+                    <button class="btn btn-outline-dark" type="button">
+                      <div class="_1a2vq1h">
+                        <div style="flex: 0 1 0%;">
+                          <i style="font-size: 20px !important;display: block;" class="fa-brands fa-apple"></i>
+                        </div>
+                        <div style="flex: 1 1 0% !important; font-weight: 500 !important;">
+                          Continuer avec Apple
+                        </div> 
+                      </div>
+                  </button>
+                  <button class="btn btn-outline-dark" type="button">
+                    <div class="_1a2vq1h">
+                      <div style="flex: 0 1 0%;">
+                        <i style="font-size: 20px !important;display: block;" class="fa-regular fa-envelope"></i>
+                      </div>
+                      <div style="flex: 1 1 0% !important; font-weight: 500 !important;">
+                        Continuer avec une adresse e-mail
+                      </div> 
+                    </div>
+                </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="ModalInscription" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+              <h4 class="modal-title" id="">Connexion ou inscription</h4>
+          </div>
+          <div class="modal-body ui-front">
+              <div class="container">
+                <div class="_je2ned">
+                  <h3 class="_u72b34">Bienvenue sur Babiigo</h3>
+                  <form action="POST">
+                    <div style="border-radius: 8px;">
+                      <div style="display: flex;">
+                          <div style="position: relative;flex: 1 1 0%">
+                            <div class="_ey3tib">
+                              <label class="_19nw8j1" for="country" style="border: 1px solid #00000047;border-radius: 10px 10px 0 0;">
+                                <div class="_zhftk97">
+                                  <div class="_11hx67x">
+                                    Pays/Région
+                                  </div>
+                                </div>
+                                <div>
+                                  <select class="_1iwku6d" id="country">
+                                    <option value="">Afghanistan</option>
+                                    <option value="">Afrique du sud</option>
+                                    <option value="">Albanie</option>
+                                  </select>
+                                </div>
+                              </label>
+                              <div class="_lmil0">
+                                <i style="display: block;fill: none;height: 16px;width: 16px;stroke: currentcolor;stroke-width: 4;overflow: visible;" class="fa-solid fa-chevron-down"></i>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div style="display: flex;">
+                        <div style="flex: 2 1 0%; position:relative"></div>
+                    </div>
+                    </div>
+                  </form>
+                  <div style="font-size:10px">
+                    Nous vous appellerons ou vous enverrons un SMS pour confirmer votre numéro. Les frais standards d'envoi de messages et d'échange de données s'appliquent. <a href="#" style="color: black;"><b style="text-decoration:underline ;">Politique de confidentialité</b></a>
+                  </div>
+                  <div class="d-grid gap-2 col">
+                    <button class="btn btn-continuer" type="button">Continuer</button>
+                    <div class="_1x0diny1">
+                      <div class="_16fq9mb">
+                        ou
+                      </div>
+                    </div>
+                    <button class="btn btn-outline-dark" type="button">
+                        <div class="_1a2vq1h">
+                          <div style="flex: 0 1 0%;">
+                            <i style="font-size: 20px !important;display: block;color: rgb(60, 60, 254);" class="fa-brands fa-facebook"></i>
+                          </div>
+                          <div style="flex: 1 1 0% !important; font-weight: 500 !important;">
+                            Continuer avec Facebook
+                          </div> 
+                        </div>
+                    </button>
+                    <button class="btn btn-outline-dark" type="button">
+                      <div class="_1a2vq1h">
+                        <div style="flex: 0 1 0%;">
+                          <i style="font-size: 20px !important;display: block;" class="fa-brands fa-google"></i>
+                        </div>
+                        <div style="flex: 1 1 0% !important; font-weight: 500 !important;">
+                          Continuer avec Google
+                        </div> 
+                      </div>
+                  </button>
+                  <button class="btn btn-outline-dark" type="button">
+                    <div class="_1a2vq1h">
+                      <div style="flex: 0 1 0%;">
+                        <i style="font-size: 20px !important;display: block;" class="fa-brands fa-apple"></i>
+                      </div>
+                      <div style="flex: 1 1 0% !important; font-weight: 500 !important;">
+                        Continuer avec Apple
+                      </div> 
+                    </div>
+                </button>
+                <button class="btn btn-outline-dark" type="button">
+                  <div class="_1a2vq1h">
+                    <div style="flex: 0 1 0%;">
+                      <i style="font-size: 20px !important;display: block;" class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div style="flex: 1 1 0% !important; font-weight: 500 !important;">
+                      Continuer avec une adresse e-mail
+                    </div> 
+                  </div>
+              </button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+      </div>
+  </div>
+</div>
+<!-- <div class="row header" style="border-bottom: 1px solid rgb(221, 218, 218); position: sticky;top: 0;">
+  <div class="col-3" style="margin: 40px 0; text-align: center;">Logo</div>
+  <div class="col-6" style="margin: auto;">
+    <div class="container">
+      <div class="search-bar">
+        <form>
+          <div class="location-input">
+            <button>N'importe où</button>
+          </div>
+          <span style="font-size: 25px;color: #bebbbb;">|</span>
+          <div class="location-input">
+            <button>Une semaine</button>
+          </div>
+          <span style="font-size: 25px;color: #bebbbb;">|</span>
+          <div class="location-input">
+            <button>Ajouter des voyageurs</button>
+          </div>
+          <button type="submit"><img src="public/images/search.png"></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-3" style="margin: 30px 0; padding:12px 0; text-align: center;">
+    <div class="row">
+      <a class="col-md-5 btnHote">Devenez hôte</a>
+      <div class="col-md-1" style="color:black; margin: 6px 0; padding: 0;">
+        <button id="btn_langue" style="border: 0; background-color:white; border-radius: 50px; width: 35px; height: 35px;">
+          <div id="logoGlobe">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+        </button>
+      </div>
+      <div class="col-md-4">
+        
+        <button style="border: 1px solid rgb(216, 215, 215); padding: 4px 0;" type="button" class="btn btn-outline-light btn-rounded dropdown-toggle" data-mdb-ripple-color="dark" id="dropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-bars fa-xl" style="color: black;margin: 7px;" ></i>
+          <i class="fa-solid fa-circle-user fa-3x" style="color: gray;"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" id="btn-Inscription" style="font-weight: 600;">Inscription</a></li>
+          <li><a class="dropdown-item" id="btn-Connexion">Connexion</a></li>
+          <li><hr class="dropdown-divider" style="color: #80808066;"/></li>
+          <li><a class="dropdown-item" id="btn-Heberger">Héberger des voyageurs</a></li>
+          <li><a class="dropdown-item" id="btn-Experience">Créer une expérience</a></li>
+          <li><a class="dropdown-item" id="btn-Aide">Aide</a></li>
+        </ul>
+      </div>
+      
+  </div>
+</div>
+<div class="container-filtre">
+  <div class="carousel-container">
+    <div class="carousel-content" id="carousel-content">
+      <div class="box"><img src="public/images/filtre/arctique.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/chalet.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/chambre.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/design.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/ile.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/maison.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/maison2.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/parcs.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/piscine.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/surf.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/tropique.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/wow.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/arctique.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/chalet.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/chambre.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/design.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/ile.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/maison.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/maison2.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/parcs.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/piscine.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/surf.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/tropique.jpg" alt=""></div>
+    </div>
+    <div class="controls">
+      <button id="carousel-left-btn" class="btnFiltre left"><i class="fa-solid fa-chevron-left"></i></button>
+      <button id="carousel-right-btn" class="btnFiltre right showcarousel"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+</div>
+</div> -->
+
+<div class="h1p4yt3r" style="background-color: #fff;border-bottom:1px solid rgba(0, 0, 0, 0.136)">
+  <div>
+    <div style="--gp-section-max-width: 1120px;">
+      <header class="c1kn6kxw">
+          <div class="cazj9f1">
+            <div style="flex:1 0 140px">Logo</div>
+            <div class="container">
+              <div class="search-bar">
+                <form>
+                  <div class="location-input">
+                    <button>N'importe où</button>
+                  </div>
+                  <span style="font-size: 25px;color: #bebbbb;">|</span>
+                  <div class="location-input">
+                    <button>Une semaine</button>
+                  </div>
+                  <span style="font-size: 25px;color: #bebbbb;">|</span>
+                  <div class="location-input">
+                    <button>Ajouter des voyageurs</button>
+                  </div>
+                  <button type="submit"><img src="public/images/search.png"></button>
+                </form>
+              </div>
+            </div>
+            <div class="col-3" style="margin: 30px 0; padding:12px 0; text-align: center;">
+              <div class="row">
+                <a class="col-md-5 btnHote">Devenez hôte</a>
+                <div class="col-md-1" style="color:black; margin: 6px 0; padding: 0;">
+                  <button id="btn_langue" style="border: 0; background-color:white; border-radius: 50px; width: 35px; height: 35px;">
+                    <div id="logoGlobe">
+                      <i class="fa-solid fa-globe"></i>
+                    </div>
+                  </button>
+                </div>
+                <div class="col-md-4">
+                  
+                  <button style="border: 1px solid rgb(216, 215, 215); padding: 4px 0;" type="button" class="btn btn-outline-light btn-rounded dropdown-toggle" data-mdb-ripple-color="dark" id="dropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bars fa-xl" style="color: black;margin: 7px;" ></i>
+                    <i class="fa-solid fa-circle-user fa-3x" style="color: gray;"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" id="btn-Inscription" style="font-weight: 600;">Inscription</a></li>
+                    <li><a class="dropdown-item" id="btn-Connexion">Connexion</a></li>
+                    <li><hr class="dropdown-divider" style="color: #80808066;"/></li>
+                    <li><a class="dropdown-item" id="btn-Heberger">Héberger des voyageurs</a></li>
+                    <li><a class="dropdown-item" id="btn-Experience">Créer une expérience</a></li>
+                    <li><a class="dropdown-item" id="btn-Aide">Aide</a></li>
+                  </ul>
+                </div>
+                
+            </div>
+          </div>
+      </header>
+    </div>
+  </div>
+</div>
+<div class="container-filtre" style="background-color: #fff; box-shadow: 1px 1px 4px 0 #0000001f;">
+  <div class="carousel-container">
+    <div class="carousel-content" id="carousel-content">
+      <div class="box"><img src="public/images/filtre/arctique.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/chalet.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/chambre.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/design.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/ile.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/maison.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/maison2.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/parcs.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/piscine.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/surf.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/tropique.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/wow.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/arctique.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/chalet.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/chambre.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/design.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/ile.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/maison.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/maison2.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/parcs.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/piscine.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/surf.jpg" alt=""></div>
+      <div class="box"><img src="public/images/filtre/tropique.jpg" alt=""></div>
+    </div>
+    <div class="controls">
+      <button id="carousel-left-btn" class="btnFiltre left"><i class="fa-solid fa-chevron-left"></i></button>
+      <button id="carousel-right-btn" class="btnFiltre right showcarousel"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+</div>
+    
+    
+    <div style="padding: 20px 80px 0 80px; position: sticky;top: 80px;" >
+      <div class="trending">
+        <div>
+          <div class="heart"><i class="fa-solid fa-heart"></i></div>
+          <img src="public/images/dubai.png">
+          <h3>Dubaî, E.A.U <span style="margin-left: 140px;font-size: 16px;font-weight: 100;"><i style="font-size: 12px; padding-right: 4;" class="fa-solid fa-star"></i>4,78</span></h3>
+          <h6>Proposé par Yann</h6>
+          <h6>25-30sept.-Professionnel</h6>
+          <h6><strong style="font-weight:bold">701€</strong> par nuit</h6>
+        </div>
+        <div>
+          <div class="heart"><i class="fa-solid fa-heart"></i></div>
+          <img src="public/images/new-york.png">
+          <h3>New York, U.S.A<span style="margin-left: 110px;font-size: 16px;font-weight: 100;"><i style="font-size: 12px; padding-right: 4;" class="fa-solid fa-star"></i>4,78</span></h3>
+          <h6>Proposé par Yann</h6>
+          <h6>25-30sept.-Professionnel</h6>
+          <h6><strong style="font-weight:bold">701€</strong> par nuit</h6>
+        </div>
+        <div>
+          <div class="heart"><i class="fa-solid fa-heart"></i></div>
+          <img src="public/images/paris.png">
+          <h3>Paris, France<span style="margin-left: 135px;font-size: 16px;font-weight: 100;"><i style="font-size: 12px; padding-right: 4;" class="fa-solid fa-star"></i>4,78</span></h3>
+          <h6>Proposé par Yann</h6>
+          <h6>25-30sept.-Professionnel</h6>
+          <h6><strong style="font-weight:bold">701€</strong> par nuit</h6>
+        </div>
+        <div>
+          <div class="heart"><i class="fa-solid fa-heart"></i></div>
+          <img src="public/images/new-delhi.png">
+          <h3>New Delhi, Inde<span style="margin-left: 115px;font-size: 16px;font-weight: 100;"><i style="font-size: 12px; padding-right: 4;" class="fa-solid fa-star"></i>4,78</span></h3>
+          <h6>Proposé par Yann</h6>
+          <h6>25-30sept.-Professionnel</h6>
+          <h6><strong style="font-weight:bold">701€</strong> par nuit</h6>
+        </div>
+      </div>
+      <div class="trending">
+        <div>
+          <div class="heart"><i class="fa-solid fa-heart"></i></div>
+          <img src="public/images/dubai.png">
+          <h3>Dubaî, E.A.U <span style="margin-left: 140px;font-size: 16px;font-weight: 100;"><i style="font-size: 12px; padding-right: 4;" class="fa-solid fa-star"></i>4,78</span></h3>
+          <h6>Proposé par Yann</h6>
+          <h6>25-30sept.-Professionnel</h6>
+          <h6><strong style="font-weight:bold">701€</strong> par nuit</h6>
+        </div>
+        <div>
+          <div class="heart"><i class="fa-solid fa-heart"></i></div>
+          <img src="public/images/new-york.png">
+          <h3>New York, U.S.A<span style="margin-left: 110px;font-size: 16px;font-weight: 100;"><i style="font-size: 12px; padding-right: 4;" class="fa-solid fa-star"></i>4,78</span></h3>
+          <h6>Proposé par Yann</h6>
+          <h6>25-30sept.-Professionnel</h6>
+          <h6><strong style="font-weight:bold">701€</strong> par nuit</h6>
+        </div>
+        <div>
+          <div class="heart"><i class="fa-solid fa-heart"></i></div>
+          <img src="public/images/paris.png">
+          <h3>Paris, France<span style="margin-left: 135px;font-size: 16px;font-weight: 100;"><i style="font-size: 12px; padding-right: 4;" class="fa-solid fa-star"></i>4,78</span></h3>
+          <h6>Proposé par Yann</h6>
+          <h6>25-30sept.-Professionnel</h6>
+          <h6><strong style="font-weight:bold">701€</strong> par nuit</h6>
+        </div>
+        <div>
+          <div class="heart"><i class="fa-solid fa-heart"></i></div>
+          <img src="public/images/new-delhi.png">
+          <h3>New Delhi, Inde<span style="margin-left: 115px;font-size: 16px;font-weight: 100;"><i style="font-size: 12px; padding-right: 4;" class="fa-solid fa-star"></i>4,78</span></h3>
+          <h6>Proposé par Yann</h6>
+          <h6>25-30sept.-Professionnel</h6>
+          <h6><strong style="font-weight:bold">701€</strong> par nuit</h6>
+        </div>
+      </div>
+      <div class="trending">
+        <div>
+          <div class="heart"><i class="fa-solid fa-heart"></i></div>
+          <img src="public/images/dubai.png">
+          <h3>Dubaî, E.A.U <span style="margin-left: 140px;font-size: 16px;font-weight: 100;"><i style="font-size: 12px; padding-right: 4;" class="fa-solid fa-star"></i>4,78</span></h3>
+          <h6>Proposé par Yann</h6>
+          <h6>25-30sept.-Professionnel</h6>
+          <h6><strong style="font-weight:bold">701€</strong> par nuit</h6>
+        </div>
+        <div>
+          <div class="heart"><i class="fa-solid fa-heart"></i></div>
+          <img src="public/images/new-york.png">
+          <h3>New York, U.S.A<span style="margin-left: 110px;font-size: 16px;font-weight: 100;"><i style="font-size: 12px; padding-right: 4;" class="fa-solid fa-star"></i>4,78</span></h3>
+          <h6>Proposé par Yann</h6>
+          <h6>25-30sept.-Professionnel</h6>
+          <h6><strong style="font-weight:bold">701€</strong> par nuit</h6>
+        </div>
+        <div>
+          <div class="heart"><i class="fa-solid fa-heart"></i></div>
+          <img src="public/images/paris.png">
+          <h3>Paris, France<span style="margin-left: 135px;font-size: 16px;font-weight: 100;"><i style="font-size: 12px; padding-right: 4;" class="fa-solid fa-star"></i>4,78</span></h3>
+          <h6>Proposé par Yann</h6>
+          <h6>25-30sept.-Professionnel</h6>
+          <h6><strong style="font-weight:bold">701€</strong> par nuit</h6>
+        </div>
+        <div>
+          <div class="heart"><i class="fa-solid fa-heart"></i></div>
+          <img src="public/images/new-delhi.png">
+          <h3>New Delhi, Inde<span style="margin-left: 115px;font-size: 16px;font-weight: 100;"><i style="font-size: 12px; padding-right: 4;" class="fa-solid fa-star"></i>4,78</span></h3>
+          <h6>Proposé par Yann</h6>
+          <h6>25-30sept.-Professionnel</h6>
+          <h6><strong style="font-weight:bold">701€</strong> par nuit</h6>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <hr>
+        <p>Copyright @2022, Easy Tutorials.</p>
+      </div>
+  
+    </div>
+
+    <script>
+      $("#btn-Connexion").on('click', function(){
+          $("#ModalConnexion").modal("toggle");
+      });
+      $("#btn-Inscription").on('click', function(){
+          $("#ModalInscription").modal("toggle");
+      });
+      (function(){
+        var carouselContent = document.querySelector('#carousel-content');
+        var carouselLeftBtn = document.querySelector('#carousel-left-btn');
+        var carouselRightBtn = document.querySelector('#carousel-right-btn');
+        var carouselLeftValue = 0;
+        var totalWidth = carouselContent.getBoundingClientRect().width;
+        var widthToMove = 70 + 57.8 + 210 + 57.8;
+        var arrowBtnWidth = 50;
+        var noOfSlides = totalWidth/widthToMove;
+        var currentSlide = 1;
+
+        carouselLeftBtn.addEventListener('click',moveCarouselRight);
+        carouselRightBtn.addEventListener('click',moveCarouselLeft);
+      
+        manageButtons();
+
+        function moveCarouselLeft(){
+          if(currentSlide == 1) carouselLeftValue -= widthToMove - arrowBtnWidth;
+          else carouselLeftValue -=widthToMove;
+
+          currentSlide ++;
+          manageButtons();
+
+          carouselContent.style.left = `${carouselLeftValue}px`;
+        }
+
+        function moveCarouselRight(){
+          if(currentSlide == 2) carouselLeftValue = 8;
+          else carouselLeftValue +=widthToMove;
+
+          currentSlide --;
+          manageButtons();
+
+          carouselContent.style.left = `${carouselLeftValue}px`;
+        } 
+        
+        function manageButtons(){
+          if(currentSlide == noOfSlides-1)
+          carouselRightBtn.classList.remove("showcarousel");
+          else
+          carouselRightBtn.classList.add("showcarousel");
+
+          if(currentSlide == 1)
+          carouselLeftBtn.classList.remove("showcarousel");
+          else
+          carouselLeftBtn.classList.add("showcarousel");
+        }
+      })();
+
+    </script>
+</body>
+</html>
