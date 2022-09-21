@@ -463,5 +463,35 @@ body{
     text-align: center ;
 }
 
+.bottomassit{
+    padding: 14px 70px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1000;
+    background-color: #fff;
+    border-top: 1px solid #0000001f;
+}
+
+._15vc6yg {
+    display: inline-block !important;
+    text-align: center !important;
+    width: 19px !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+}
+
+._1e6wtwm5 {
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    font-style: inherit !important;
+    font-variant: inherit !important;
+    text-decoration: none !important;
+    color: #222222 !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    outline: none !important;
+}
+
 
 
