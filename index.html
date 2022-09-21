@@ -394,7 +394,7 @@ rel="stylesheet"
     </div>
   </div>
 </div>
-<div class="container-filtre" style="background-color: #fff; box-shadow: 1px 1px 4px 0 #0000001f;">
+<div class="container-filtre" style="background-color: #fff;">
   <div class="carousel-container">
     <div class="carousel-content" id="carousel-content">
       <div class="box"><img src="public/images/filtre/arctique.jpg" alt=""></div>
@@ -426,6 +426,9 @@ rel="stylesheet"
       <button id="carousel-right-btn" class="btnFiltre right showcarousel"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
   </div>
+</div>
+<div class="f1ioqu24">
+  <button type="button" class="btn btn-dark btn-rounded" style="padding: 15px 13px;font-size: 15px;">Afficher la carte<i class="fa-solid fa-map" style="padding: 0 10px;"></i></button>
 </div>
     
     
@@ -545,6 +548,16 @@ rel="stylesheet"
     </div>
 
     <script>
+
+      $(window).scroll(function(){
+        
+        var numb = $(this).scrollTop();
+        if(numb >18){
+          $(".container-filtre").css('box-shadow','1px 1px 4px 0 #0000001f');
+        }else{
+          $(".container-filtre").css('box-shadow','none');
+        }
+      })
       $("#btn-Connexion").on('click', function(){
           $("#ModalConnexion").modal("toggle");
       });

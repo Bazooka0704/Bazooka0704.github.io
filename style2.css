@@ -146,6 +146,10 @@ body{
     border-radius: 20px;
 }
 
+.btn{
+    text-transform: none !important;
+}
+
 /*-------------------Filtre-------------------------------*/
 
 
@@ -449,6 +453,14 @@ body{
     min-width: 348px;
     padding: 0 24px;
     text-align: center;
+}
+
+.f1ioqu24{
+    width: 100%;
+    position: fixed;
+    bottom: 90px;
+    z-index: 1000;
+    text-align: center ;
 }
 
 
