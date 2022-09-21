@@ -464,13 +464,13 @@ body{
 }
 
 .bottomassit{
-    padding: 14px 70px;
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-    z-index: 1000;
-    background-color: #fff;
-    border-top: 1px solid #0000001f;
+    padding: 14px 70px!important;
+    width: 100%!important;
+    position: fixed!important;
+    bottom: 0px!important;
+    z-index: 1000!important;
+    background-color: #fff!important;
+    border-top: 1px solid #0000001f!important;
 }
 
 ._15vc6yg {
