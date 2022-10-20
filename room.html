@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="public/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="room.css">
+        <script defer src="public/fontawesome-6-1-1/js/all.js"></script>
+        
+        <title>Babiigo</title>
+    </head>
+    <body >
+        <script src="public/jquery/jquery.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="public/jquery/jquery-ui.min.css" type="text/css"/>
+        <script src="public/jquery/jquery-ui.min.js" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <script src="public/momentjs/moment.min.js" type="text/javascript"></script>
+        <script src="public/sweetalertjs/sweetalert.min.js" type="text/javascript"></script>
+        <!-- Font Awesome -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        rel="stylesheet"
+        />
+        <!-- Google Fonts -->
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+        />
+        <!-- MDB -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+        rel="stylesheet"
+        />
+        
+        <!-- MDB -->
+        <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
+        ></script>
+
+        
+    <div class="_2hs30c">
+        <div class="_16grqhk">
+            <div class="_siy8gh">
+                <div class="c1yo0219 dir dir-ltr">
+                    <header class="c15gdd3h cx8czm6 c1gfe7sj dir dir-ltr">
+                        <div class="c1y90419 ctl0wgq dir dir-ltr">
+                            <div class="c1b5mviy dir dir-ltr">
+                                <a class="c13cw3wj cbavvlr dir dir-ltr" aria-label="Page d'accueil Airbnb" href="/">
+                                    <div class="l10sdlqs dir dir-ltr">
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cqvtwb5 dir dir-ltr">
+                                <div class="lkm6i7z l1rzxhu2 lr5v90m dir dir-ltr">
+                                    <div class="cs3bjhu cfc0w66 dir dir-ltr" role="search" data-testid="little-search" aria-labelledby="littleSearchLabel">
+                                        <button class="f19g2zq0 dir dir-ltr" type="button">
+                                            <div class="f1xx50dm dir dir-ltr" id="littleSearchLabel">Commencez votre recherche</div>
+                                            <div class="s1qcpybl dir dir-ltr" data-icon="true" data-testid="little-search-icon">
+                                                <img src="public/images/search.png" style="display: block;fill: none;height: 12px;width: 12px;stroke: currentcolor;stroke-width: 5.33333;overflow: visible;">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="b3ppcw1 b1t24mo5 b12rw3s8 dir dir-ltr" style="display: block;">
+                                    <div class="_1lveqk8" >
+                                        <form class="fxxrw3g dir dir-ltr">
+                                            <div class="t1h6fwl6 dir dir-ltr">
+                                                <div class="c1l1dklw ckwz6rs c1tvb5zc dir dir-ltr">
+                                                    <button type="button" class="b13wj47r v1ri224d dir dir-ltr">
+                                                        <div class="tnrruw1 t1s6zadl dir dir-ltr">
+                                                            <span class="t8kx4o2 dir dir-ltr">Logements</span>
+                                                        </div>
+                                                    </button>
+                                                    <input type="hidden">
+                                                </div>
+                                                <div class="c1l1dklw ckwz6rs dir dir-ltr">
+                                                    <button  class="b13wj47r v1ri224d dir dir-ltr">
+                                                        <div class="tnrruw1 dir dir-ltr">
+                                                            <span class="t8kx4o2 dir dir-ltr">Expériences</span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div class="w1ut965 dir dir-ltr">
+                                                    <a href="#" class="_1yydbd74">
+                                                        <div class="cg0grco c17uw2yp dir dir-ltr">
+                                                            <div class="tho47y5 dir dir-ltr">Expériences en ligne</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="search-tabpanel" class="c1lt77mq c1oqx6sn dir dir-ltr">
+                                                <div class="i1wnljx3 dir dir-ltr">
+                                                    <div class="_1jkbosm7">
+                                                        <div class="c11pxvht dir dir-ltr">
+                                                            <label class="in3kizz i18pj64x i1mixo1 dir dir-ltr" for="bigsearch-query-stays_location_inspirations-input">
+                                                                <div class="c1gxtg0q dir dir-ltr">
+                                                                    <div class="i1kt4qwh dir dir-ltr">Destination</div>
+                                                                    <input class="ivycze5 dir dir-ltr"  placeholder="Recherchez des destinations" value="">
+                                                                </div>
+                                                            </label>
+                                                            <span class="hrm8eud dir dir-ltr" id="bigsearch-query-stays_location_inspirations-description">Continuez pour accéder aux résultats suggérés</span>
+                                                            <div class="p187tul2 dir dir-ltr">
+                                                                <div class="c1nifi44 l16t0m55 dir dir-ltr">
+                                                                    <section>
+                                                                        <div class=" dir dir-ltr">
+                                                                            <div class="k3s7ijn dir dir-ltr" role="dialog"  id="bigsearch-query-stays_location_inspirations-listbox" tabindex="-1">
+                                                                                <div class="l1d0r31c dir dir-ltr">
+                                                                                    <div class="l5mmcz9 dir dir-ltr" id="locationInspirationTitleID">Rechercher par région</div>
+                                                                                    <div class=" dir dir-ltr" role="radiogroup" id="" aria-labelledby="locationInspirationTitleID">
+                                                                                        <div class="ddxkr2l dir dir-ltr">
+                                                                                            <div class="db6tyt8 dir dir-ltr">
+                                                                                                <div class="cbt5pty dir dir-ltr">
+                                                                                                    <button class="_bi7q1f" role="radio" aria-checked="false" type="button">
+                                                                                                        <img class="i17d61fu dir dir-ltr" alt="" src="">
+                                                                                                        <div class="ioa2q3t dir dir-ltr"></div>
+                                                                                                        <span class="a8jt5op dir dir-ltr">Je suis flexible</span>
+                                                                                                        <span aria-hidden="true" class="_1x0xu65p">
+                                                                                                            <img class="i17d61fu dir dir-ltr" alt="" src="">
+                                                                                                            <div class="ioa2q3t dir dir-ltr"></div>
+                                                                                                        </span>
+                                                                                                    </button>
+                                                                                                    <div class="o11dhjqa dir dir-ltr">Je suis flexible</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="db6tyt8 dir dir-ltr">
+                                                                                                <div class="cbt5pty dir dir-ltr">
+                                                                                                    <button class="_bi7q1f" role="radio" aria-checked="false" type="button">
+                                                                                                        <img class="i17d61fu dir dir-ltr" alt="" src="">
+                                                                                                        <div class="ioa2q3t dir dir-ltr"></div>
+                                                                                                        <span class="a8jt5op dir dir-ltr">Europe</span>
+                                                                                                        <span aria-hidden="true" class="_1x0xu65p">
+                                                                                                            <img class="i17d61fu dir dir-ltr" alt="" src="">
+                                                                                                            <div class="ioa2q3t dir dir-ltr"></div>
+                                                                                                        </span>
+                                                                                                    </button>
+                                                                                                    <div>
+                                                                                                        <div class="o11dhjqa dir dir-ltr">Europe</div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="db6tyt8 dir dir-ltr">
+                                                                                                <div class="cbt5pty dir dir-ltr">
+                                                                                                    <button class="_bi7q1f" role="radio" aria-checked="false" type="button">
+                                                                                                        <img class="i17d61fu dir dir-ltr" alt="" src="">
+                                                                                                        <div class="ioa2q3t dir dir-ltr"></div>
+                                                                                                        <span class="a8jt5op dir dir-ltr">France</span>
+                                                                                                        <span aria-hidden="true" class="_1x0xu65p">
+                                                                                                            <img class="i17d61fu dir dir-ltr" alt="" src="">
+                                                                                                            <div class="ioa2q3t dir dir-ltr"></div>
+                                                                                                        </span>
+                                                                                                    </button>
+                                                                                                    <div class="o11dhjqa dir dir-ltr">France</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="db6tyt8 dir dir-ltr">
+                                                                                                <div class="cbt5pty dir dir-ltr">
+                                                                                                    <button class="_bi7q1f" role="radio" aria-checked="false" type="button">
+                                                                                                        <img class="i17d61fu dir dir-ltr" alt="" src="">
+                                                                                                        <div class="ioa2q3t dir dir-ltr"></div>
+                                                                                                        <span class="a8jt5op dir dir-ltr">Moyen-Orient</span>
+                                                                                                        <span aria-hidden="true" class="_1x0xu65p">
+                                                                                                            <img class="i17d61fu dir dir-ltr" alt="" src="">
+                                                                                                            <div class="ioa2q3t dir dir-ltr"></div>
+                                                                                                        </span>
+                                                                                                    </button>
+                                                                                                    <div class="o11dhjqa dir dir-ltr">Moyen-Orient</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="db6tyt8 dir dir-ltr">
+                                                                                                <div class="cbt5pty dir dir-ltr">
+                                                                                                    <button class="_bi7q1f" role="radio" aria-checked="false" type="button">
+                                                                                                        <img class="i17d61fu dir dir-ltr" alt="" src="">
+                                                                                                        <div class="ioa2q3t dir dir-ltr"></div>
+                                                                                                        <span class="a8jt5op dir dir-ltr">Canada</span>
+                                                                                                        <span aria-hidden="true" class="_1x0xu65p">
+                                                                                                            <img class="i17d61fu dir dir-ltr" alt="" src="">
+                                                                                                            <div class="ioa2q3t dir dir-ltr"></div>
+                                                                                                        </span>
+                                                                                                    </button>
+                                                                                                    <div class="o11dhjqa dir dir-ltr">Canada</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="db6tyt8 dir dir-ltr">
+                                                                                                <div class="cbt5pty dir dir-ltr">
+                                                                                                    <button class="_bi7q1f" role="radio" aria-checked="false" type="button">
+                                                                                                        <img class="i17d61fu dir dir-ltr" alt="" src="">
+                                                                                                        <div class="ioa2q3t dir dir-ltr"></div>
+                                                                                                        <span class="a8jt5op dir dir-ltr">États-Unis</span>
+                                                                                                        <span aria-hidden="true" class="_1x0xu65p">
+                                                                                                            <img class="i17d61fu dir dir-ltr" alt="" src="">
+                                                                                                            <div class="ioa2q3t dir dir-ltr"></div>
+                                                                                                        </span>
+                                                                                                    </button>
+                                                                                                    <div class="o11dhjqa dir dir-ltr">États-Unis</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                            <span class="v1ltjji6 dir dir-ltr" role="status"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sv3mkdx dir dir-ltr">
+
+                                                    </div>
+                                                    <div class="chdozwg dir dir-ltr">
+                                                        <div class="c2frgdd dir dir-ltr">
+                                                            <div class="b192dx2b b174x59c dir dir-ltr" role="button" >
+                                                                <div class="c11if3v5 dir dir-ltr">
+                                                                    <div class="l1vto4to dir dir-ltr">Arrivée</div>
+                                                                    <div class="p1kudodg dir dir-ltr">Quand&nbsp;?</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sv3mkdx dir dir-ltr"></div>
+                                                        <div class="c2frgdd dir dir-ltr">
+                                                            <div class="b192dx2b b174x59c dir dir-ltr" role="button" >
+                                                                <div class="c11if3v5 dir dir-ltr">
+                                                                    <div class="l1vto4to dir dir-ltr">Départ</div>
+                                                                    <div class="p1kudodg dir dir-ltr">Quand&nbsp;?</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sv3mkdx dir dir-ltr"></div>
+                                                    <div class="c6ezw63 c1geg2ah dir dir-ltr">
+                                                        <div class="c2frgdd crbzydf dir dir-ltr">
+                                                            <div class="b192dx2b b174x59c bkmyqgh dir dir-ltr" role="button">
+                                                                <div class="c11if3v5 dir dir-ltr">
+                                                                    <div class="l1vto4to dir dir-ltr">Voyageurs</div>
+                                                                    <div class="p1kudodg dir dir-ltr">Qui&nbsp;?</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="s1i622mb dir dir-ltr">
+                                                                <button class="b134py57 bu69x9v dir dir-ltr" type="button">
+                                                                    <div class="c8th90 dir dir-ltr">
+                                                                        <div class=" dir dir-ltr">
+                                                                            <i style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                                                                
+                                                                            </i>
+                                                                        </div>
+                                                                        <div class="l1huikbk llclyq8 dir dir-ltr">Rechercher</div>
+                                                                    </div>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="csb38sw dir dir-ltr">
+                                <nav class="_vuzcgs" aria-label="Profil">
+                                    <div class="_176ugpa">
+                                        <a class="c1jdlqzl c177491c dir dir-ltr" href="hote.html">
+                                            <div class="l1hgmivi dir dir-ltr">Devenez hôte</div>
+                                        </a>
+                                        <div class="_1ubw29">
+                                            <button type="button" class="c1jdlqzl c177491c dir dir-ltr" >
+                                                <div class="l1hgmivi dir dir-ltr">
+                                                    <div class="_z5mecy" aria-hidden="true">
+                                                        <i style="display: block; height: 16px; width: 16px; fill: currentcolor;"></i>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="_3hmsj">
+                                        <div class="_167wsvl">
+                                            <button type="button" class="c1grjlav crawnjq dir dir-ltr">
+                                                <div class=" dir dir-ltr">
+                                                    <i  style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                                                        
+                                                    </i>
+                                                </div>
+                                                <div class="fp36fst dir dir-ltr">
+                                                    <i style="display: block; height: 100%; width: 100%; fill: currentcolor;">
+                                                    </i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <div class="cgx2eil dir dir-ltr">
+                <div class="c1yo0219 dir dir-ltr">
+                    <div style="--gp-section-max-width:1120px" >
+                        <div class="_le6wlg">
+                            <div style="--maxWidth:1120px" class="plmw1e5 mq5rv0q dir dir-ltr">
+                                <div style="padding-top:110px">
+                                    <section>
+                                        <div class="_b8stb0">
+                                            <span class="_1n81at5">
+                                                <h1  class="_fecoyn4">The Seashell House</h1>
+                                            </span>
+                                        </div>
+                                        <div class="_1qdp1ym">
+                                            <div class="_dm2bj1">
+                                                <span class="_1jvg42j">
+                                                    <span class="_hyestb">
+                                                        <i class="fa-solid fa-star" style="display: block; height: 14px; width: 14px; fill: currentcolor;"></i>
+                                                    </span>
+                                                    <span class="_17p6nbba" aria-hidden="true">4,72 ·</span>
+                                                    <span class="_s65ijh7">
+                                                        <button aria-label="Évaluation de 4,72 sur 5 sur la base de 371&nbsp;commentaires." type="button" class="_11eqlma4">371 commentaires</button>
+                                                    </span>
+                                                </span>
+                                                <span class="_5oadh0" aria-hidden="true">·</span>
+                                                <span class="_1jvg42j">
+                                                    <span class="_hyestb">
+                                                        <span class="_8tbpu3" aria-hidden="true"></span>
+                                                    </span>
+                                                    <span aria-hidden="false" class="_1mhorg9">Superhôte</span>
+                                                </span>
+                                                <span class="_5oadh0" aria-hidden="true">·</span>
+                                                <span class="_1jvg42j">
+                                                    <button type="button" class="_11eqlma4">
+                                                        <span class="_9xiloll" aria-hidden="false">Isla Mujeres, Mexique</span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <div class="">
+                                                <div class="_y4w03w">
+                                                    <div class="_1jdtwz4">
+                                                        <div class="_c2acbp">
+                                                            <button class="_1e5q4qoz">
+                                                                <div class="_5kaapu">
+                                                                    <span class="_14tkmhr">
+                                                                        <i class="fa-solid fa-arrow-up-from-bracket"  style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 2; overflow: visible;"></i>
+                                                                    </span>
+                                                                    Partager
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <button class="_1e5q4qoz">
+                                                            <div  class="_5kaapu">
+                                                                <span class="_14tkmhr">
+                                                                    <i class="fa-solid fa-heart"  style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 2; overflow: visible;"></i>       
+                                                                </span>
+                                                                Enregistrer
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c1yo0219 dir dir-ltr">
+                    <div style="--gp-section-max-width:1120px" data-reactroot="">
+                        <div class="_le6wlg">
+                            <div style="--maxWidth:1120px" class="plmw1e5 mq5rv0q dir dir-ltr">
+                                <div style="padding-top:24px">
+                                    <div class="">
+                                        <div class="_z80d2i">
+                                            <div class="_9xgknn">
+                                                <div class="_168ht2w">
+                                                    <div class="_skzmvy">
+                                                        <div class="_5ltqju">
+                                                            <div class="_13sj9hk">
+                                                                <div class="_100fji8">
+                                                                    <div class="_1emsdka">
+                                                                        <button type="button" class="_1xh26pm2">
+                                                                            <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 100%; width: 100%; min-height: 1px;">
+                                                                                <picture>
+                                                                                    <source srcset="public/images/femm_souri_1.webp" media="(max-width: 743px)">
+                                                                                    <img class="_6tbg2q" src="public/images/femm_souri_1.webp" style="object-fit: cover; vertical-align: bottom;">
+                                                                                </picture>
+                                                                                <div class="_15p4g025" style=" background-size: cover;"></div>
+                                                                            </div>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="_178t1g5">
+                                                            <div class="_13sj9hk">
+                                                                <div class="_1l7oqbd">
+                                                                    <div class="_100fji8">
+                                                                        <div class="_1emsdka">
+                                                                            <button aria-label="Image du logement 2, Afficher toutes les photos" type="button" class="_1xh26pm2">
+                                                                                <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 100%; width: 100%; min-height: 1px;">
+                                                                                    <picture>
+                                                                                       <img class="_6tbg2q" aria-hidden="true" alt="" elementtiming="LCP-target" src="public/images/sea2.webp" data-original-uri="public/images/sea5.webp" style="object-fit: cover; vertical-align: bottom;">
+                                                                                    </picture>
+                                                                                    <div class="_15p4g025" style="background-image: url(&quot;public/images/sea2.webp&quot;); background-size: cover;">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="_924zz4g">
+                                                                    <div class="_100fji8">
+                                                                        <div class="_1emsdka">
+                                                                            <button aria-label="Image du logement 3, Afficher toutes les photos" type="button" class="_1xh26pm2">
+                                                                                <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 100%; width: 100%; min-height: 1px;">
+                                                                                    <picture>
+                                                                                        <img class="_6tbg2q" aria-hidden="true" alt="" elementtiming="LCP-target" src="public/images/sea3.webp" data-original-uri="public/images/sea3.webp" style="object-fit: cover; vertical-align: bottom;">
+                                                                                    </picture>
+                                                                                    <div class="_15p4g025" style="background-image: url(&quot;public/images/sea3.webp&quot;); background-size: cover;">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="_1827gf2">
+                                                            <div class="_13sj9hk">
+                                                                <div class="_1l7oqbd">
+                                                                    <div class="_100fji8">
+                                                                        <div class="_1emsdka">
+                                                                            <button aria-label="Image du logement 4, Afficher toutes les photos" type="button" class="_1xh26pm2">
+                                                                                <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 100%; width: 100%; min-height: 1px;">
+                                                                                    <picture>
+                                                                                        <img class="_6tbg2q" aria-hidden="true" alt="" elementtiming="LCP-target" src="public/images/sea4.webp" data-original-uri="public/images/sea4.webp" style="object-fit: cover; vertical-align: bottom;">
+                                                                                    </picture>
+                                                                                    <div class="_15p4g025" style="background-image: url(&quot;public/images/sea4.webp&quot;); background-size: cover;">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="_924zz4g">
+                                                                    <div class="_100fji8">
+                                                                        <div class="_1emsdka">
+                                                                            <button aria-label="Image du logement 5, Afficher toutes les photos" type="button" class="_1xh26pm2">
+                                                                                <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 100%; width: 100%; min-height: 1px;">
+                                                                                    <picture>
+                                                                                        <img class="_6tbg2q" aria-hidden="true" alt="" src="public/images/sea5.webp" data-original-uri="public/images/sea5.webp" style="object-fit: cover; vertical-align: bottom;">
+                                                                                    </picture>
+                                                                                    <div class="_15p4g025" style="background-image: url(&quot;public/images/sea5.webp&quot;); background-size: cover;">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_ekor09">
+                                                    <button type="button" class="_1ju7xj0j">
+                                                        <div class="_5kaapu">
+                                                            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                                                                <path d="m3 11.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-10-5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-10-5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z" fill-rule="evenodd"></path>
+                                                            </svg>
+                                                            <div class="_uhxsfg">Afficher toutes les photos</div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c1yo0219 dir dir-ltr">
+                    <div class="_12nksyy" data-reactroot="">
+                        <div class="_16e70jgn">
+                            <div>
+                                <div class="c1yo0219 dir dir-ltr">
+                                    <div style="--gp-section-max-width:1120px" data-reactroot="">
+                                        <div data-plugin-in-point-id="OVERVIEW_DEFAULT" data-section-id="OVERVIEW_DEFAULT" style="padding-top: 48px; padding-bottom: 24px;">
+                                            <section>
+                                                <div>
+                                                    <div class="_88xxct"><div class="_jro6t0">
+                                                        <div class="_tqmy57">
+                                                            <div class="_cv5qq4">
+                                                                <h2 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">Logement entier&nbsp;: logement&nbsp;⸱&nbsp;Chez&nbsp;Michelle</h2>
+                                                        </div>
+                                                        <ol class="lgx66tx dir dir-ltr">
+                                                            <li class="l7n4lsf dir dir-ltr">
+                                                                <span>4 voyageurs</span>
+                                                                <span class="axjq0r dir dir-ltr">
+                                                                    <span class="s1b4clln dir dir-ltr" aria-hidden="true"> · </span>
+                                                                </span>
+                                                            </li>
+                                                            <li class="l7n4lsf dir dir-ltr">
+                                                                <span class="pen26si dir dir-ltr">
+                                                                    <span class="s1b4clln dir dir-ltr" aria-hidden="true"> · </span>
+                                                                </span>
+                                                                <span>2 chambres</span>
+                                                                <span class="axjq0r dir dir-ltr">
+                                                                    <span class="s1b4clln dir dir-ltr" aria-hidden="true"> · </span>
+                                                                </span></li><li class="l7n4lsf dir dir-ltr">
+                                                                    <span class="pen26si dir dir-ltr">
+                                                                        <span class="s1b4clln dir dir-ltr" aria-hidden="true"> · </span>
+                                                                    </span>
+                                                                    <span>2 lits</span>
+                                                                    <span class="axjq0r dir dir-ltr">
+                                                                        <span class="s1b4clln dir dir-ltr" aria-hidden="true"> · </span>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="l7n4lsf dir dir-ltr">
+                                                                    <span class="pen26si dir dir-ltr">
+                                                                        <span class="s1b4clln dir dir-ltr" aria-hidden="true"> · </span>
+                                                                    </span>
+                                                                    <span>2,5 salles de bain</span>
+                                                                </li>
+                                                            </ol>
+                                                        </div>
+                                                        <div class="_kt26s1">
+                                                            <div class="_5kripx">
+                                                                <div class="_e7hn5" style="height: 56px; width: 56px;">
+                                                                    <button aria-label="Michelle est Superhôte. En savoir plus sur Michelle." type="button" class="_1j5azqwp">
+                                                                        <div class="_1c81x67" style="height: 56px; width: 56px; border-radius: 50%;">
+                                                                            <div class="_1h6n1zu" role="img" aria-busy="false" aria-label="Michelle est Superhôte. En savoir plus sur Michelle." style="display: inline-block; vertical-align: bottom; height: 100%; width: 100%; min-height: 1px;">
+                                                                                <img class="_9ofhsl" aria-hidden="true" alt="Michelle est Superhôte. En savoir plus sur Michelle." decoding="async" elementtiming="LCP-target" src="https://a0.muscache.com/im/pictures/user/7cff8107-2c57-4b93-b03e-a3140be9a280.jpg?im_w=240" data-original-uri="https://a0.muscache.com/im/pictures/user/7cff8107-2c57-4b93-b03e-a3140be9a280.jpg?im_w=240" style="object-fit: cover; vertical-align: bottom;">
+                                                                                <div class="_15p4g025" style="background-image: url(&quot;https://a0.muscache.com/im/pictures/user/7cff8107-2c57-4b93-b03e-a3140be9a280.jpg?im_w=240&quot;); background-size: cover;"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </button>
+                                                                    <div class="_r5jnqg">
+                                                                        <svg viewBox="0 0 14 24" role="presentation" aria-hidden="true" focusable="false" style="height: 1em; width: 1em; display: block; fill: currentcolor;">
+                                                                            <path d="m10.5 20.0005065c0 1.9326761-1.56704361 3.4994935-3.5 3.4994935s-3.5-1.5668174-3.5-3.4994935c0-1.9326762 1.5670426-3.5005065 3.5-3.5005065s3.5 1.5678303 3.5 3.5005065m-9.99486248-18.58757644-.00513752 8.13836018c0 .45796416.21682079.88992936.58880718 1.17090736l5.07730539 3.831699c.4870761.367971 1.16836618.367971 1.65647028.0009994l5.08141685-3.8266984c.3719859-.2789784.5898342-.7109444.5908612-1.16790827.0010271-1.75186288.0041101-6.21051146.0051391-8.14035983 0-.50396002-.4202834-.91292822-.9392158-.91292822l-11.11643181-.00699945c-.51790391-.00099942-.93818728.40796878-.93921487.91292823" fill="#fff"></path>
+                                                                            <path d="m12 9.5-5-3.70124468 5-3.79875532zm-6.1292309 9.187485c-.52182677.3180834-.8707691.8762459-.8707691 1.5144379 0 .9937534.83703449 1.7980771 1.870162 1.7980771.81806646 0 1.50434636-.5065007 1.75946763-1.2095239z" fill="#ffb400"></path><path d="m12 9.5-5 3.75-5-3.75v-7.5z" fill="#ff5a5f"></path><path d="m7 24c-2.2060547 0-4-1.7939453-4-3.9990234 0-2.2060547 1.7939453-4.0009766 4-4.0009766s4 1.7949219 4 4.0009766c0 2.2050781-1.7939453 3.9990234-4 3.9990234zm0-7c-1.6542969 0-3 1.3466797-3 3.0009766 0 1.6533203 1.3457031 2.9990234 3 2.9990234s3-1.3457031 3-2.9990234c0-1.6542969-1.3457031-3.0009766-3-3.0009766zm.0039062-1.8242188c-.4560547 0-.9121094-.1064453-1.2617188-.3164062l-5.0458984-3.8642578c-.4697265-.3642578-.696289-.8525391-.696289-1.4951172v-8c.0009766-.3730469.1679688-.7529297.4580078-1.0429688.2900391-.2905273.6689453-.4570312 1.0410156-.4570312h.0019531 10.9990235c.7851562 0 1.5.7148438 1.5 1.5v7.9277344c-.0009766.6762695-.2421875 1.2177734-.6953125 1.5668945l-5.0009766 3.8325195c-.3505859.2333985-.8251953.3486328-1.2998047.3486328zm-5.5058593-14.1757812c-.1044922 0-.2324219.0625-.3330078.1635742-.1015625.1020508-.1650391.230957-.1650391.3374024v7.9990234c0 .3305664.0888672.5341797.3066406.703125l4.9970703 3.8310547c.3330078.1953125 1.0859375.2001953 1.4208984-.0205078l4.9716797-3.8125c.2001954-.1542969.3027344-.4155274.303711-.7749024v-7.9267578c0-.2285156-.2714844-.4995117-.5-.4995117h-11-.0009766s0 0-.0009765 0z" fill="#484848"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c1yo0219 dir dir-ltr">
+                                <div style="--gp-section-max-width:1120px;">
+                                    <div class="_npr0qi" style="border-top-color: rgb(221, 221, 221);"></div>
+                                    <div data-plugin-in-point-id="HIGHLIGHTS_DEFAULT" data-section-id="HIGHLIGHTS_DEFAULT" style="padding-top: 32px; padding-bottom: 32px;">
+                                        <div class="_1vjikx5">
+                                            <div class="_1t2btyf">
+                                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                    <path d="m2 4c0-.85216986.98551359-1.29743382 1.62252676-.78322518l.08458002.0761184 25.00000002 24.99999998c.6025751.6025751.2205609 1.6142876-.5934759 1.7011235l-.1136309.0059833h-25c-.51283584 0-.93550716-.3860402-.99327227-.8833789l-.00672773-.1166211zm2 2.415v21.585h21.585l-4.085-4.086-1.7928932 1.7931068-1.4142136-1.4142136 1.7921068-1.7938932-2.585-2.585-1.7928932 1.7931068-1.4142136-1.4142136 1.7921068-1.7938932-2.585-2.585-1.7928932 1.7931068-1.4142136-1.4142136 1.7921068-1.7938932-2.585-2.585-1.79289322 1.7931068-1.41421356-1.4142136 1.79210678-1.7938932zm3 10.585c0-.8521699.98551359-1.2974338 1.62252676-.7832252l.08458002.0761184 7.00000002 7c.6025751.6025751.2205609 1.6142876-.5934759 1.7011235l-.1136309.0059833h-7c-.51283584 0-.93550716-.3860402-.99327227-.8833789l-.00672773-.1166211zm5.2928932-15.20710678c.360484-.36048396.927715-.3882135 1.3200062-.08318861l.0942074.08318861 15.5 15.49999998c.0578584.0578584.1082864.1224881.1502461.1923778l.0564586.1085905 2 4.5c.3320921.7472072-.3209586 1.5376556-1.0949471 1.3900057l-.1062123-.0260409-5-1.5c-.1188824-.0356647-.2297327-.0930392-.3270948-.1688646l-.0926641-.0818549-15.49999998-15.50000002c-.36048396-.36048396-.3882135-.92771502-.08318861-1.32000622l.08318861-.09420734zm-3.2928932 17.62210678v3.585h3.585zm7.25-12.251-1.585 1.585 11.365 11.366 2.672.801-1.04-2.339zm-3.25-3.249-1.585 1.585 1.835 1.834 1.585-1.585z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="_1mqc21n">
+                                                <div class="_1qsawv5">Maison conçue par</div><div class="_1jlr81g">
+                                                    <span class="ll4r2nl dir dir-ltr">Eduardo Ocampo </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="_1vjikx5">
+                                            <div class="_1t2btyf">
+                                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                    <path d="m24.3334 1.66675c1.0543745 0 1.9181663.81587127 1.9945143 1.85073677l.0054857.14926323-.00065 24.666 3.00065.00075v2h-26.66665v-2l3-.00075v-24.666c0-1.05436681.81587301-1.91816558 1.850737-1.99451429l.149263-.00548571zm-4.00065 2h-12.666l-.00075 24.66625 12.66675-.00025zm4.00065 0h-2.00065v24.666l2.00025.00025zm-7.0001 11.00002c.7363778 0 1.33333.5969522 1.33333 1.33333s-.5969522 1.33333-1.33333 1.33333-1.33333-.5969522-1.33333-1.33333.5969522-1.33333 1.33333-1.33333z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="_1mqc21n">
+                                                <div class="_1qsawv5">Arrivée autonome</div>
+                                                <div class="_1jlr81g">Vous pouvez entrer dans les lieux avec une serrure à digicode.</div>
+                                            </div>
+                                        </div>
+                                        <div class="_1vjikx5">
+                                            <div class="_1t2btyf">
+                                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                    <path d="m11.6667 0-.00095 1.666h8.667l.00055-1.666h2l-.00055 1.666 6.00065.00063c1.0543745 0 1.9181663.81587127 1.9945143 1.85073677l.0054857.14926323v15.91907c0 .4715696-.1664445.9258658-.4669028 1.2844692l-.1188904.1298308-8.7476886 8.7476953c-.3334303.3332526-.7723097.5367561-1.2381975.5778649l-.1758207.0077398h-12.91915c-2.68874373 0-4.88181754-2.1223321-4.99538046-4.7831124l-.00461954-.2168876v-21.66668c0-1.05436021.81587582-1.91815587 1.85073739-1.99450431l.14926261-.00548569 5.999-.00063.00095-1.666zm16.66605 11.666h-24.666v13.6673c0 1.5976581 1.24893332 2.9036593 2.82372864 2.9949072l.17627136.0050928 10.999-.0003.00095-5.6664c0-2.6887355 2.122362-4.8818171 4.7832071-4.9953804l.2168929-.0046196 5.66595-.0006zm-.081 8-5.58495.0006c-1.5977285 0-2.9037573 1.2489454-2.9950071 2.8237299l-.0050929.1762701-.00095 5.5864zm-18.586-16-5.999.00062v5.99938h24.666l.00065-5.99938-6.00065-.00062.00055 1.66733h-2l-.00055-1.66733h-8.667l.00095 1.66733h-2z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="_1mqc21n">
+                                                <div class="_1qsawv5">Annulation gratuite avant le 27 avr..</div>
+                                                <div class="_1jlr81g"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c1yo0219 dir dir-ltr">
+                                <div style="--gp-section-max-width:1120px;">
+                                    <div class="_npr0qi" style="border-top-color: rgb(221, 221, 221);"></div>
+                                    <div data-plugin-in-point-id="AIRCOVER_PDP_BANNER" data-section-id="AIRCOVER_PDP_BANNER" style="padding-top: 32px; padding-bottom: 32px;">
+                                        <section>
+                                            <div class="cnlfh1x dir dir-ltr">
+                                                <h2 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                                    <img class="l1li2ovm dir dir-ltr" src="https://a0.muscache.com/im/pictures/54e427bb-9cb7-4a81-94cf-78f19156faad.jpg" alt="AirCover">
+                                                </h2>
+                                                <div class="tgbzqhs dir dir-ltr">
+                                                    Chaque réservation comprend une protection gratuite en cas d'annulation par l'hôte, d'inexactitudes dans la description du logement, ainsi que d'autres problèmes comme les difficultés d'accès au&nbsp;logement.
+                                                </div>
+                                                <button aria-label="En savoir plus" type="button" class="_15rpys7s">En savoir plus</button>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c1yo0219 dir dir-ltr">
+                                <div style="--gp-section-max-width:1120px;">
+                                    <div class="_npr0qi" style="border-top-color: rgb(221, 221, 221);"></div>
+                                    <div data-plugin-in-point-id="UGC_TRANSLATION" data-section-id="UGC_TRANSLATION" style="padding-top: 32px;">
+                                        <div class="_z8r60f">
+                                            <div class="_1k6958v">
+                                                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                                                    <path d="M9 0a1 1 0 0 1 .993.883L10 1v5h5a1 1 0 0 1 .993.883L16 7v8a1 1 0 0 1-.883.993L15 16H7a1 1 0 0 1-.993-.883L6 15v-5H1a1 1 0 0 1-.993-.883L0 9V1A1 1 0 0 1 .883.007L1 0h8zm1.729 7l-1.393.495.233.217.13.132c.125.127.227.245.308.352l.073.103.048.073.045.077H7.308v1.309h1.207l.166.52.09.266.112.29a6.294 6.294 0 0 0 1.109 1.789c-.495.315-1.119.607-1.87.87l-.331.112-.346.108-.445.134L7.72 15l.407-.125.386-.128c1.007-.349 1.836-.752 2.486-1.214.57.405 1.277.764 2.12 1.08l.369.134.386.128.406.125.72-1.153-.445-.134-.26-.08-.345-.115c-.783-.27-1.43-.57-1.94-.895a6.3 6.3 0 0 0 1.068-1.694l.128-.32.114-.33.165-.521h1.208V8.449H11.64l-.093-.231a3.696 3.696 0 0 0-.554-.917l-.126-.149-.14-.152zm1.35 2.758l-.042.133-.076.224-.103.264A4.985 4.985 0 0 1 11 11.76a4.952 4.952 0 0 1-.743-1.127l-.115-.254-.103-.264-.076-.224-.042-.133h2.158zM9 1H1v8h5V7c0-.057.005-.113.014-.167H3.827L3.425 8H2l2.257-6h1.486l1.504 4H9V1zM5 3.411L4.253 5.6h1.502L5 3.411z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="_ae0xfc">
+                                                <span class="ll4r2nl dir dir-ltr">Certaines informations ont été traduites automatiquement.</span> 
+                                                <button aria-label="Afficher la version originale" type="button" class="_15rpys7s">Afficher la version originale</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c1yo0219 dir dir-ltr">
+                                <div style="--gp-section-max-width:1120px;">
+                                    <div data-plugin-in-point-id="DESCRIPTION_DEFAULT" data-section-id="DESCRIPTION_DEFAULT" style="padding-top: 32px; padding-bottom: 48px;">
+                                        <div class=" dir dir-ltr">
+                                            <div style="line-height: 24px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical;">
+                                                <span>
+                                                    <span class="ll4r2nl dir dir-ltr">
+                                                        L'AÉROPORT INTERNATIONAL DE CANCÚN EST L'endroit où vous arrivez .
+                                                        <br><br>
+                                                        Puis taxi à 25 minutes puis à 20 minutes en ferry .
+                                                        <br><br>
+                                                        La célèbre maison de coquillages est une propriété fermée.
+                                                        <br><br>
+                                                        Votre concierge est disponible à côté pour vous guider 
+                                                        <br><br>
+                                                        Vous disposerez d'une piscine privée, de 2 lits king size, d'une kitchenette  et toute la propriété est à vous … les deux coquillages . En coquille wifi, climatisation.
+                                                        <br><br>
+                                                        <span class="_1di55y9">Accès des voyageurs</span>
+                                                        <br>
+                                                        Vane sera votre concierge pendant votre séjour à la maison Seashell. Elle se fera un plaisir de vous réserver une voiturette de golf à l'avance 
+                                                        <br>Veuillez informer Vane de votre heure d'arrivée afin qu'elle puisse se préparer pour votre séjour
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="sx1pl6d dir dir-ltr">
+                                            <button type="button" class="b1k5q1b3 v18vkvko dir dir-ltr">
+                                                <span class="c1d1a0n6 dir dir-ltr">
+                                                    <span class="cn5lml1 dir dir-ltr">En savoir plus</span>
+                                                    <span class="tukjzc dir dir-ltr">
+                                                        <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 12px; width: 12px; display: block; fill: var(--f-k-smk-x);">
+                                                            <path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c1yo0219 dir dir-ltr">
+                                <div style="--gp-section-max-width:1120px;">
+                                    <div class="_npr0qi" style="border-top-color: rgb(221, 221, 221);"></div>
+                                    <div data-plugin-in-point-id="SLEEPING_ARRANGEMENT_DEFAULT" data-section-id="SLEEPING_ARRANGEMENT_DEFAULT" style="padding-top: 48px; padding-bottom: 48px;">
+                                        <div class="sewcpu6 dir dir-ltr" style="--spacingBottom:3;">
+                                            <div class="t5p7tdn dir dir-ltr">
+                                                <section>
+                                                    <h2 tabindex="-1" class="hnwb2pb dir dir-ltr" elementtiming="LCP-target">Où vous dormirez</h2>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="_6htn2u">
+                                            <div class="_88dcy8g">
+                                                <div style="margin-top: 0px; margin-bottom: 0px;">
+                                                    <div class="_7ts20mk">
+                                                        <div class="_c991cpe">
+                                                            <div class="_1ilrlnv">
+                                                                <div class="_muswv4">
+                                                                    <div class="_p03egf" aria-hidden="true">
+                                                                        <span class="_nvr5q">
+                                                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                                                <path d="M28 2a2 2 0 0 1 1.995 1.85L30 4l-.001 9.836 1.847 5.54a3 3 0 0 1 .115.468l.03.24.009.24V30h-2v-2H2v2H0v-9.675a3 3 0 0 1 .087-.717l.067-.232 1.845-5.537L2 4a2 2 0 0 1 1.697-1.977l.154-.018L4 2zm1.999 20H2l-.001 3.999h28zm-1.387-6H3.387l-1.333 4h27.891zM28 4H4l-.001 10H6v-4a2 2 0 0 1 1.85-1.995L8 8h16a2 2 0 0 1 1.995 1.85L26 10v4h1.999zm-13 6H8v4h7zm9 0h-7v4h7z"></path>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="_1auxwog">Chambre&nbsp;1</div>
+                                                                    <div class="_1a5glfg">1 lit king size</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="_c991cpe">
+                                                            <div class="_1ilrlnv">
+                                                                <div class="_muswv4">
+                                                                    <div class="_p03egf" aria-hidden="true">
+                                                                        <span class="_nvr5q">
+                                                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M28 2a2 2 0 0 1 1.995 1.85L30 4l-.001 9.836 1.847 5.54a3 3 0 0 1 .115.468l.03.24.009.24V30h-2v-2H2v2H0v-9.675a3 3 0 0 1 .087-.717l.067-.232 1.845-5.537L2 4a2 2 0 0 1 1.697-1.977l.154-.018L4 2zm1.999 20H2l-.001 3.999h28zm-1.387-6H3.387l-1.333 4h27.891zM28 4H4l-.001 10H6v-4a2 2 0 0 1 1.85-1.995L8 8h16a2 2 0 0 1 1.995 1.85L26 10v4h1.999zm-13 6H8v4h7zm9 0h-7v4h7z"></path></svg>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="_1auxwog">Chambre&nbsp;2</div>
+                                                                    <div class="_1a5glfg">1 lit king size</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c1yo0219 dir dir-ltr">
+                                <div style="--gp-section-max-width:1120px;">
+                                    <div class="_npr0qi" style="border-top-color: rgb(221, 221, 221);"></div>
+                                    <div style="padding-top: 48px; padding-bottom: 48px;">
+                                        <section>
+                                            <div  class="d1aa9g70 dir dir-ltr"></div>
+                                            <div class="sewcpu6 dir dir-ltr" style="--spacingBottom:3;">
+                                                <div class="t5p7tdn dir dir-ltr">
+                                                    <h2 tabindex="-1" class="hnwb2pb dir dir-ltr" elementtiming="LCP-target">Ce que propose ce logement</h2>
+                                                </div>
+                                            </div>
+                                            <div class="_1byskwn">
+                                                <div class="_19xnuo97">
+                                                    <div class="iikjzje i10xc1ab dir dir-ltr">
+                                                        <div>Accès à la plage</div>
+                                                        <div class="i4wvyiy i1fpqhzs dir dir-ltr">
+                                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                                <path d="M24 27c.988 0 1.945.351 2.671 1.009.306.276.71.445 1.142.483L28 28.5v2l-.228-.006a3.96 3.96 0 0 1-2.443-1.003A1.978 1.978 0 0 0 24 29c-.502 0-.978.175-1.328.491a3.977 3.977 0 0 1-2.67 1.009 3.977 3.977 0 0 1-2.672-1.009A1.978 1.978 0 0 0 16 29c-.503 0-.98.175-1.329.491a3.978 3.978 0 0 1-2.67 1.009 3.978 3.978 0 0 1-2.672-1.008A1.978 1.978 0 0 0 8 29c-.503 0-.98.175-1.33.491a3.96 3.96 0 0 1-2.442 1.003L4 30.5v-2l.187-.008a1.953 1.953 0 0 0 1.142-.483A3.975 3.975 0 0 1 8 27c.988 0 1.945.352 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.492A3.974 3.974 0 0 1 16 27c.988 0 1.945.351 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.491A3.975 3.975 0 0 1 23.999 27zm0-5c.988 0 1.945.351 2.671 1.009.306.276.71.445 1.142.483L28 23.5v2l-.228-.006a3.96 3.96 0 0 1-2.443-1.003A1.978 1.978 0 0 0 24 24c-.502 0-.978.175-1.328.491a3.977 3.977 0 0 1-2.67 1.009 3.977 3.977 0 0 1-2.672-1.009A1.978 1.978 0 0 0 16 24c-.503 0-.98.175-1.329.491a3.978 3.978 0 0 1-2.67 1.009 3.978 3.978 0 0 1-2.672-1.008A1.978 1.978 0 0 0 8 24c-.503 0-.98.175-1.33.491a3.96 3.96 0 0 1-2.442 1.003L4 25.5v-2l.187-.008a1.953 1.953 0 0 0 1.142-.483A3.975 3.975 0 0 1 8 22c.988 0 1.945.352 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.492A3.974 3.974 0 0 1 16 22c.988 0 1.945.351 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.491A3.975 3.975 0 0 1 23.999 22zm0-5c.988 0 1.945.351 2.671 1.009.306.276.71.445 1.142.483L28 18.5v2l-.228-.006a3.96 3.96 0 0 1-2.443-1.003A1.978 1.978 0 0 0 24 19c-.502 0-.978.175-1.328.491a3.977 3.977 0 0 1-2.67 1.009 3.977 3.977 0 0 1-2.672-1.009A1.978 1.978 0 0 0 16 19c-.503 0-.98.175-1.329.491a3.978 3.978 0 0 1-2.67 1.009 3.978 3.978 0 0 1-2.672-1.008A1.978 1.978 0 0 0 8 19c-.503 0-.98.175-1.33.491a3.96 3.96 0 0 1-2.442 1.003L4 20.5v-2l.187-.008a1.953 1.953 0 0 0 1.142-.483A3.975 3.975 0 0 1 8 17c.988 0 1.945.352 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.492A3.974 3.974 0 0 1 16 17c.988 0 1.945.351 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.491A3.975 3.975 0 0 1 23.999 17zM16 1a9 9 0 0 1 8.76 11.072c.71.131 1.374.45 1.911.937.306.276.71.445 1.142.483L28 13.5v2l-.228-.006a3.96 3.96 0 0 1-2.443-1.003 1.951 1.951 0 0 0-1.142-.483l-.145-.007h-.084a2.001 2.001 0 0 0-1.15.378l-.137.112a3.977 3.977 0 0 1-2.67 1.009 3.977 3.977 0 0 1-2.672-1.009A1.978 1.978 0 0 0 16 14c-.503 0-.98.175-1.329.491a3.978 3.978 0 0 1-2.67 1.009 3.978 3.978 0 0 1-2.672-1.008 1.951 1.951 0 0 0-1.142-.484l-.145-.007h-.084a2.002 2.002 0 0 0-1.15.378l-.137.112a3.96 3.96 0 0 1-2.443 1.003L4 15.5v-2l.187-.008a1.953 1.953 0 0 0 1.142-.483 3.916 3.916 0 0 1 1.91-.939A9 9 0 0 1 16 1zm0 2a7 7 0 0 0-6.636 9.235c.482.168.926.429 1.307.774.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.492A3.974 3.974 0 0 1 16 12c.988 0 1.945.351 2.671 1.009.35.316.826.49 1.33.491.439 0 .86-.134 1.191-.38l.137-.111c.38-.345.825-.606 1.304-.776A7 7 0 0 0 16 3z"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_19xnuo97">
+                                                    <div class="iikjzje i10xc1ab dir dir-ltr">
+                                                        <div>Cuisine</div>
+                                                        <div class="i4wvyiy i1fpqhzs dir dir-ltr">
+                                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                                <path d="M26 1a5 5 0 0 1 5 5c0 6.389-1.592 13.187-4 14.693V31h-2V20.694c-2.364-1.478-3.942-8.062-3.998-14.349L21 6l.005-.217A5 5 0 0 1 26 1zm-9 0v18.118c2.317.557 4 3.01 4 5.882 0 3.27-2.183 6-5 6s-5-2.73-5-6c0-2.872 1.683-5.326 4-5.882V1zM2 1h1c4.47 0 6.934 6.365 6.999 18.505L10 21H3.999L4 31H2zm14 20c-1.602 0-3 1.748-3 4s1.398 4 3 4 3-1.748 3-4-1.398-4-3-4zM4 3.239V19h3.995l-.017-.964-.027-.949C7.673 9.157 6.235 4.623 4.224 3.364l-.12-.07zm19.005 2.585L23 6l.002.31c.045 4.321 1.031 9.133 1.999 11.39V3.17a3.002 3.002 0 0 0-1.996 2.654zm3.996-2.653v14.526C27.99 15.387 29 10.4 29 6a3.001 3.001 0 0 0-2-2.829z"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_19xnuo97">
+                                                    <div class="iikjzje i10xc1ab dir dir-ltr">
+                                                        <div>Wifi</div>
+                                                        <div class="i4wvyiy i1fpqhzs dir dir-ltr">
+                                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                                <path d="m15.9999 20.33323c2.0250459 0 3.66667 1.6416241 3.66667 3.66667s-1.6416241 3.66667-3.66667 3.66667-3.66667-1.6416241-3.66667-3.66667 1.6416241-3.66667 3.66667-3.66667zm0 2c-.9204764 0-1.66667.7461936-1.66667 1.66667s.7461936 1.66667 1.66667 1.66667 1.66667-.7461936 1.66667-1.66667-.7461936-1.66667-1.66667-1.66667zm.0001-7.33323c3.5168171 0 6.5625093 2.0171251 8.0432368 4.9575354l-1.5143264 1.5127043c-1.0142061-2.615688-3.5549814-4.4702397-6.5289104-4.4702397s-5.5147043 1.8545517-6.52891042 4.4702397l-1.51382132-1.5137072c1.48091492-2.939866 4.52631444-4.9565325 8.04273174-4.9565325zm.0001-5.3332c4.9804693 0 9.3676401 2.540213 11.9365919 6.3957185l-1.4470949 1.4473863c-2.1746764-3.5072732-6.0593053-5.8431048-10.489497-5.8431048s-8.31482064 2.3358316-10.48949703 5.8431048l-1.44709488-1.4473863c2.56895177-3.8555055 6.95612261-6.3957185 11.93659191-6.3957185zm-.0002-5.3336c6.4510616 0 12.1766693 3.10603731 15.7629187 7.9042075l-1.4304978 1.4309874c-3.2086497-4.44342277-8.4328305-7.3351949-14.3324209-7.3351949-5.8991465 0-11.12298511 2.89133703-14.33169668 7.334192l-1.43047422-1.4309849c3.58629751-4.79760153 9.31155768-7.9032071 15.7621709-7.9032071z"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_19xnuo97">
+                                                    <div class="iikjzje i10xc1ab dir dir-ltr">
+                                                        <div>Parking gratuit sur place</div>
+                                                        <div class="i4wvyiy i1fpqhzs dir dir-ltr">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                                <path d="M26 19a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 18a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm20.693-5l.42 1.119C29.253 15.036 30 16.426 30 18v9c0 1.103-.897 2-2 2h-2c-1.103 0-2-.897-2-2v-2H8v2c0 1.103-.897 2-2 2H4c-1.103 0-2-.897-2-2v-9c0-1.575.746-2.965 1.888-3.882L4.308 13H2v-2h3v.152l1.82-4.854A2.009 2.009 0 0 1 8.693 5h14.614c.829 0 1.58.521 1.873 1.297L27 11.151V11h3v2h-2.307zM6 25H4v2h2v-2zm22 0h-2v2h2v-2zm0-2v-5c0-1.654-1.346-3-3-3H7c-1.654 0-3 1.346-3 3v5h24zm-3-10h.557l-2.25-6H8.693l-2.25 6H25zm-15 7h12v-2H10v2z"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_19xnuo97">
+                                                    <div class="iikjzje i10xc1ab dir dir-ltr">
+                                                        <div>Piscine Privé</div>
+                                                        <div class="i4wvyiy i1fpqhzs dir dir-ltr">
+                                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                                <path d="M24 26c.988 0 1.945.351 2.671 1.009.306.276.71.445 1.142.483L28 27.5v2l-.228-.006a3.96 3.96 0 0 1-2.443-1.003A1.978 1.978 0 0 0 24 28c-.502 0-.978.175-1.328.491a3.977 3.977 0 0 1-2.67 1.009 3.977 3.977 0 0 1-2.672-1.009A1.978 1.978 0 0 0 16 28c-.503 0-.98.175-1.329.491a3.978 3.978 0 0 1-2.67 1.009 3.978 3.978 0 0 1-2.672-1.008A1.978 1.978 0 0 0 8 28c-.503 0-.98.175-1.33.491a3.96 3.96 0 0 1-2.442 1.003L4 29.5v-2l.187-.008a1.953 1.953 0 0 0 1.142-.483A3.975 3.975 0 0 1 8 26c.988 0 1.945.352 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.492A3.974 3.974 0 0 1 16 26c.988 0 1.945.351 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.491A3.975 3.975 0 0 1 23.999 26zm0-5c.988 0 1.945.351 2.671 1.009.306.276.71.445 1.142.483L28 22.5v2l-.228-.006a3.96 3.96 0 0 1-2.443-1.003A1.978 1.978 0 0 0 24 23c-.502 0-.978.175-1.328.491a3.977 3.977 0 0 1-2.67 1.009 3.977 3.977 0 0 1-2.672-1.009A1.978 1.978 0 0 0 16 23c-.503 0-.98.175-1.329.491a3.978 3.978 0 0 1-2.67 1.009 3.978 3.978 0 0 1-2.672-1.008A1.978 1.978 0 0 0 8 23c-.503 0-.98.175-1.33.491a3.96 3.96 0 0 1-2.442 1.003L4 24.5v-2l.187-.008a1.953 1.953 0 0 0 1.142-.483A3.975 3.975 0 0 1 8 21c.988 0 1.945.352 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.492A3.974 3.974 0 0 1 16 21c.988 0 1.945.351 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.491A3.975 3.975 0 0 1 23.999 21zM20 3a4 4 0 0 1 3.995 3.8L24 7v2h4v2h-4v5c.912 0 1.798.3 2.5.862l.171.147c.306.276.71.445 1.142.483L28 17.5v2l-.228-.006a3.96 3.96 0 0 1-2.443-1.003A1.978 1.978 0 0 0 24 18c-.502 0-.978.175-1.328.491a3.977 3.977 0 0 1-2.67 1.009 3.977 3.977 0 0 1-2.672-1.009A1.978 1.978 0 0 0 16 18c-.503 0-.98.175-1.329.491a3.978 3.978 0 0 1-2.67 1.009 3.978 3.978 0 0 1-2.672-1.008A1.978 1.978 0 0 0 8 18c-.503 0-.98.175-1.33.491a3.96 3.96 0 0 1-2.442 1.003L4 19.5v-2l.187-.008a1.953 1.953 0 0 0 1.142-.483A3.975 3.975 0 0 1 8 16c.988 0 1.945.352 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.492a3.956 3.956 0 0 1 2.444-1.002L16 16v-5H4V9h12V7a2 2 0 0 0-3.995-.15L12 7h-2a4 4 0 0 1 7-2.645A3.985 3.985 0 0 1 20 3zm-2 13.523c.16.091.313.194.459.307l.212.179c.35.316.826.49 1.33.491.439 0 .86-.134 1.191-.38l.137-.111c.206-.187.431-.35.67-.486V11h-4zM20 5a2 2 0 0 0-1.995 1.85L18 7v2h4V7a2 2 0 0 0-2-2z"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_19xnuo97">
+                                                    <div class="iikjzje i10xc1ab dir dir-ltr">
+                                                        <div>TV avec abonnement standard au câble</div>
+                                                        <div class="i4wvyiy i1fpqhzs dir dir-ltr">
+                                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                                <path d="M9 29v-2h2v-2H6a5 5 0 0 1-4.995-4.783L1 20V8a5 5 0 0 1 4.783-4.995L6 3h20a5 5 0 0 1 4.995 4.783L31 8v12a5 5 0 0 1-4.783 4.995L26 25h-5v2h2v2zm10-4h-6v2h6zm7-20H6a3 3 0 0 0-2.995 2.824L3 8v12a3 3 0 0 0 2.824 2.995L6 23h20a3 3 0 0 0 2.995-2.824L29 20V8a3 3 0 0 0-2.824-2.995z"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_19xnuo97">
+                                                    <div class="iikjzje i10xc1ab dir dir-ltr">
+                                                        <div>Climatisation&nbsp;: système split sans évacuation</div>
+                                                        <div class="i4wvyiy i1fpqhzs dir dir-ltr">
+                                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                                <path d="M17 1v4.03l4.026-2.324 1 1.732L17 7.339v6.928l6-3.464V5h2v4.648l3.49-2.014 1 1.732L26 11.381l4.026 2.325-1 1.732L24 12.535l-6 3.464 6 3.465 5.026-2.902 1 1.732L26 20.618l3.49 2.016-1 1.732L25 22.351V27h-2v-5.804l-6-3.465v6.929l5.026 2.902-1 1.732L17 26.97V31h-2v-4.031l-4.026 2.325-1-1.732L15 24.66v-6.929l-6 3.464V27H7v-4.65l-3.49 2.016-1-1.732 3.489-2.016-4.025-2.324 1-1.732 5.025 2.901 6-3.464-6-3.464-5.025 2.903-1-1.732L6 11.38 2.51 9.366l1-1.732L7 9.648V5h2v5.803l6 3.464V7.339L9.974 4.438l1-1.732L15 5.03V1z"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_19xnuo97">
+                                                    <div class="iikjzje i10xc1ab dir dir-ltr">
+                                                        <div>Patio ou balcon&nbsp;: privé(e)</div>
+                                                        <div class="i4wvyiy i1fpqhzs dir dir-ltr">
+                                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                                <path d="M23 1a2 2 0 0 1 1.995 1.85L25 3v16h4v2h-2v8h2v2H3v-2h2v-8H3v-2h4V3a2 2 0 0 1 1.85-1.995L9 1zM9 21H7v8h2zm4 0h-2v8h2zm4 0h-2v8h2zm4 0h-2v8h2zm4 0h-2v8h2zm-10-8H9v6h6zm8 0h-6v6h6zM15 3H9v8h6zm8 0h-6v8h6z"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_19xnuo97">
+                                                    <div class="iikjzje i10xc1ab dir dir-ltr">
+                                                        <div>
+                                                            <span class="a8jt5op dir dir-ltr">Indisponible&nbsp;: Détecteur de monoxyde de carbone</span>
+                                                            <del aria-hidden="true">Détecteur de monoxyde de carbone</del>
+                                                        </div>
+                                                        <div class="i4wvyiy i1fpqhzs dir dir-ltr">
+                                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                                <path d="M2.05 6.292L4 8.242V25a3 3 0 0 0 2.824 2.995L7 28h16.757l1.95 1.95c-.161.023-.325.038-.49.045L25 30H7a5 5 0 0 1-4.995-4.783L2 25V7c0-.24.017-.477.05-.708zm1.657-4l26 26-1.414 1.415-26-26 1.414-1.414zM25 2a5 5 0 0 1 4.995 4.783L30 7v18c0 .24-.017.476-.05.707L28 23.757V7a3 3 0 0 0-2.824-2.995L25 4H8.242l-1.95-1.95c.162-.023.325-.038.491-.045L7 2h18zM11.1 17a5.006 5.006 0 0 0 3.9 3.9v2.03A7.005 7.005 0 0 1 9.071 17h2.03zm5.9 4.243l1.352 1.352a6.954 6.954 0 0 1-1.351.334L17 21.243zM21.243 17l1.686.001c-.067.467-.18.919-.334 1.351L21.243 17zm-4.242-7.929A7.005 7.005 0 0 1 22.929 15H20.9A5.006 5.006 0 0 0 17 11.1l.001-2.029zm-7.596 4.577L10.757 15 9.071 15c.067-.467.18-.92.334-1.352zM15 9.071l-.001 1.686-1.35-1.352A6.954 6.954 0 0 1 15 9.07zM23 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_19xnuo97">
+                                                    <div class="iikjzje i10xc1ab dir dir-ltr">
+                                                        <div>
+                                                            <span class="a8jt5op dir dir-ltr">Indisponible&nbsp;: Détecteur de fumée</span>
+                                                            <del aria-hidden="true">Détecteur de fumée</del>
+                                                        </div>
+                                                        <div class="i4wvyiy i1fpqhzs dir dir-ltr">
+                                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                                <path d="M3.486 7.727l1.447 1.448A12.94 12.94 0 0 0 3 16c0 7.18 5.82 13 13 13 2.503 0 4.84-.707 6.824-1.933l1.448 1.448A14.93 14.93 0 0 1 16 31C7.716 31 1 24.284 1 16c0-3.057.915-5.901 2.486-8.273zm.221-5.434l26 26-1.414 1.414-26-26 1.414-1.414zM16 1c8.284 0 15 6.716 15 15 0 3.057-.914 5.9-2.485 8.272l-1.448-1.448A12.94 12.94 0 0 0 29 16c0-7.18-5.82-13-13-13a12.94 12.94 0 0 0-6.825 1.933L7.727 3.486A14.93 14.93 0 0 1 16 1zm-4.9 16a5.006 5.006 0 0 0 3.9 3.9v2.03A7.005 7.005 0 0 1 9.071 17h2.03zm5.9 4.243l1.352 1.352a6.954 6.954 0 0 1-1.351.334L17 21.243zM21.243 17l1.686.001c-.067.467-.18.919-.334 1.351L21.243 17zm-4.242-7.929A7.005 7.005 0 0 1 22.929 15H20.9A5.006 5.006 0 0 0 17 11.1l.001-2.029zm-7.596 4.577L10.757 15 9.071 15c.067-.467.18-.92.334-1.352zM15 9.071l-.001 1.686-1.35-1.352A6.954 6.954 0 0 1 15 9.07zM23 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="b6xigss dir dir-ltr">
+                                                <button type="button" class="b65jmrv v7aged4 dir dir-ltr">Afficher les 39 équipements</button>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c1yo0219 dir dir-ltr">
+                                <div style="--gp-section-max-width:1120px;">
+                                    <div class="_npr0qi" style="border-top-color: rgb(221, 221, 221);"></div>
+                                    <div data-plugin-in-point-id="AVAILABILITY_CALENDAR_INLINE" data-section-id="AVAILABILITY_CALENDAR_INLINE" style="padding-top: 48px; padding-bottom: 48px;">
+                                        <div data-testid="inline-availability-calendar">
+                                            <div>
+                                                <div class="sewcpu6 dir dir-ltr" style="--spacingBottom:0;">
+                                                    <div class="t5p7tdn dir dir-ltr">
+                                                        <section>
+                                                            <h2 tabindex="-1" class="hnwb2pb dir dir-ltr" elementtiming="LCP-target">5&nbsp;nuits à Isla Mujeres</h2>
+                                                        </section>
+                                                    </div>
+                                                    <div class="s1bh1tge dir dir-ltr">
+                                                        <div class="_uxnsba" data-testid="availability-calendar-date-range">27 mai 2023 - 1 juin 2023</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="_sk02b4">
+                                                <div class="_16bq4jy">
+                                                    <div style="min-height: 314px;">
+                                                        <div>
+                                                            <div class="_g2s11rv" style="width: 647px;">
+                                                                <div>
+                                                                    <div style="width: 646px;">
+                                                                        <div class="_1x76l5m3" aria-hidden="true" role="presentation">
+                                                                            <div class="_2cafln" style="left: 0px; padding: 0px 13px;">
+                                                                                <ul class="_xv14sf">
+                                                                                    <li class="_92xroi" style="width: 41px;">Lun.</li>
+                                                                                    <li class="_92xroi" style="width: 41px;">Mar.</li>
+                                                                                    <li class="_92xroi" style="width: 41px;">Mer.</li>
+                                                                                    <li class="_92xroi" style="width: 41px;">Jeu.</li>
+                                                                                    <li class="_92xroi" style="width: 41px;">Ven.</li>
+                                                                                    <li class="_92xroi" style="width: 41px;">Sam.</li>
+                                                                                    <li class="_92xroi" style="width: 41px;">Dim.</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="_2cafln" style="left: 314px; padding: 0px 13px;">
+                                                                                <ul class="_xv14sf">
+                                                                                    <li class="_92xroi" style="width: 41px;">Lun.</li>
+                                                                                    <li class="_92xroi" style="width: 41px;">Mar.</li>
+                                                                                    <li class="_92xroi" style="width: 41px;">Mer.</li>
+                                                                                    <li class="_92xroi" style="width: 41px;">Jeu.</li>
+                                                                                    <li class="_92xroi" style="width: 41px;">Ven.</li>
+                                                                                    <li class="_92xroi" style="width: 41px;">Sam.</li>
+                                                                                    <li class="_92xroi" style="width: 41px;">Dim.</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="_14676s3" tabindex="-1" role="application" aria-label="Calendrier">
+                                                                            <div class="_5neba7a">
+                                                                                <div class="_1d1qzab">
+                                                                                    <button aria-disabled="false" aria-label="Reculez pour passer au mois précédent." type="button" class="_oda838">
+                                                                                        <span class="_e296pg">
+                                                                                            <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 12px; width: 12px; display: block; fill: currentcolor;">
+                                                                                                <path d="m13.7 16.29a1 1 0 1 1 -1.42 1.41l-8-8a1 1 0 0 1 0-1.41l8-8a1 1 0 1 1 1.42 1.41l-7.29 7.29z" fill-rule="evenodd"></path>
+                                                                                            </svg>
+                                                                                        </span>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <div class="_qz9x4fc">
+                                                                                    <button aria-disabled="false" aria-label="Avancez pour passer au mois suivant." type="button" class="_oda838">
+                                                                                        <span class="_e296pg">
+                                                                                            <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 12px; width: 12px; display: block; fill: currentcolor;">
+                                                                                                <path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path>
+                                                                                            </svg>
+                                                                                        </span>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="_1foj6yps" style="width: 646px; height: 315px;">
+                                                                                <div class="_2hyui6e" style="transform: translateX(0px); width: 1256px;">
+                                                                                    <div class="_fdp53bg">
+                                                                                        <div class="_ytfarf" data-visible="false" style="padding: 0px 13px;">
+                                                                                            <div class="_ihvjx2">
+                                                                                                <div>
+                                                                                                    <h3 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">Avril&nbsp;2023</h3>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <table class="_cvkwaj" role="presentation" style="border-spacing: 0px 2px;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                        <td class="_10rqnsul" role="button" aria-disabled="true" aria-label="NaN, Invalid date, Invalid date NaN. Non disponible " tabindex="-1" style="width: 39px; height: 39px;">
+                                                                                                            <div class="_1kiderev notranslate" data-testid="calendar-day-01/04/2023" data-is-day-blocked="true" style="width: 39px; height: 39px;">1</div>
+                                                                                                        </td>
+                                                                                                        <td class="_874f7s1" role="button" aria-disabled="true" aria-label="NaN, Invalid date, Invalid date NaN. Non disponible " tabindex="-1" style="width: 39px; height: 39px;">
+                                                                                                            <div class="_1kiderev notranslate" data-testid="calendar-day-02/04/2023" data-is-day-blocked="true" style="width: 39px; height: 39px;">2</div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="_rut4we">
+                                                        <div class="_owkz1m">
+                                                            <button aria-label="Ouvrez le panneau des raccourcis clavier" type="button" class="_1qi0sj8">
+                                                                <span class="_e296pg">
+                                                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                                        <path d="M29 5a2 2 0 0 1 1.995 1.85L31 7v18a2 2 0 0 1-1.85 1.995L29 27H3a2 2 0 0 1-1.995-1.85L1 25V7a2 2 0 0 1 1.85-1.995L3 5zm0 2H3v18h26zm-8 13v2H11v-2zm3-5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm16-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="_1sl8tba">
+                                                            <button type="button" class="_1e5q4qoz">Effacer les dates</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="_1s21a6e2">
+                            <div class="_mubbvpq">
+                                <div style="padding-bottom: 48px;">
+                                    <div class="c1yo0219 dir dir-ltr">
+                                        <div style="--gp-section-max-width:1120px" data-reactroot="">
+                                            <div style="margin-top: 48px; --gp-section-top-margin:48;">
+                                                <div style="border: 1px solid rgb(221, 221, 221); border-radius: 12px; padding: 24px; box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;">
+                                                    <div data-plugin-in-point-id="BOOK_IT_SIDEBAR" data-section-id="BOOK_IT_SIDEBAR">
+                                                        <div>
+                                                            <div class="_ud8a1c">
+                                                                <div class="_wgmchy" data-testid="book-it-default">
+                                                                    <div class="_c7v1se">
+                                                                        <div style="--pricing-guest-display-price-alignment:flex-start; --pricing-guest-display-price-flex-wrap:wrap; --pricing-guest-primary-line-font-size:22px; --pricing-guest-primary-line-line-height:26px; --pricing-guest-primary-line-unit-price-font-weight:600; --pricing-guest-primary-line-trailing-content-font-size:14px; --pricing-guest-secondary-line-font-size:14px; --pricing-guest-secondary-line-line-height:18px; --pricing-guest-secondary-line-color:#717171; --pricing-guest-explanation-disclaimer-font-size:14px; --pricing-guest-explanation-disclaimer-line-height:18px; --pricing-guest-primary-line-strikethrough-price-font-weight:600; --pricing-guest-primary-line-qualifier-font-size:16px; --pricing-guest-primary-line-qualifier-line-height:20px;">
+                                                                            <div class="_ati8ih">
+                                                                                <span class="_14y1gc">
+                                                                                    <div class="_1jo4hgw" aria-hidden="true">
+                                                                                        <span class="_tyxjp1">334&nbsp;€</span>
+                                                                                        <span class="_r1nvod">&nbsp;par nuit</span>
+                                                                                    </div>
+                                                                                    <span class="a8jt5op dir dir-ltr">334&nbsp;€ par nuit</span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="_klarpw">
+                                                                            <span class="_1y9gwt75">
+                                                                                <span class="_9qqdp4" style="font-size: 12px;">
+                                                                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;">
+                                                                                        <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path>
+                                                                                    </svg>
+                                                                                </span>
+                                                                                <span class="_12si43g" aria-hidden="true">4,72 ·</span>
+                                                                                <button aria-label="Évaluation de 4,72 sur 5 sur la base de 371&nbsp;commentaires." type="button" class="_u1thwpg">
+                                                                                    <span class="_1qx9l5ba">371 commentaires</span>
+                                                                                </button>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="_p03egf">
+                                                                        <div class="can6x7v dir dir-ltr">
+                                                                            <div>
+                                                                                <div class="cx1v2qp dir dir-ltr" style="border-radius: 8px;">
+                                                                                    <div class="_jro6t0">
+                                                                                        <div class="_zdxht7">
+                                                                                            <div class="_e296pg" style="flex: 1 1 0%;">
+                                                                                                <div role="presentation" class="_sbmagf" style="background: var(--comboInputGroup_backgroundColor, none); border-radius: 8px 8px 0px 0px; inset: 0px 0px -1px;"></div><button class="_16l1qv1" aria-label="Modifier les dates; Arrivée: 2023-05-27; Départ: 2023-06-01" type="button">
+                                                                                                    <div class="_19y8o0j">
+                                                                                                        <div class="_7eq2v2">Arrivée</div>
+                                                                                                        <div class="_1e8a8lh" data-testid="change-dates-checkIn">27/05/2023</div>
+                                                                                                    </div>
+                                                                                                    <div class="_48vms8s">
+                                                                                                        <div class="_7eq2v2">Départ</div>
+                                                                                                        <div class="_1e8a8lh" data-testid="change-dates-checkOut">01/06/2023</div>
+                                                                                                    </div>
+                                                                                                </button>
+                                                                                                <div class="_t26glb" style="inset: 0px 0px -1px; border-radius: 8px 8px 0px 0px; border-top-color: var(--comboInputGroup_borderColor, var(--iw-ihca)); border-right-color: var(--comboInputGroup_borderColor, var(--iw-ihca)); border-bottom-color: var(--comboInputGroup_borderColor, var(--iw-ihca)); border-left-color: var(--comboInputGroup_borderColor, var(--iw-ihca)); border-width: 1px; z-index: 0;"></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="_jro6t0">
+                                                                                        <div class="_bp34sw">
+                                                                                            <div class="_e296pg" style="flex: 1 1 0%;">
+                                                                                                <div role="presentation" class="_sbmagf" style="background: var(--comboInputGroup_backgroundColor, none); border-radius: 0px 0px 8px 8px; inset: 0px 0px -1px;"></div>
+                                                                                                <div class="_1gpyw79" aria-expanded="false" aria-haspopup="true" aria-labelledby="guests-label GuestPicker-book_it-trigger" aria-disabled="false" role="button" tabindex="0">
+                                                                                                    <label for="GuestPicker-book_it-trigger" class="_13kgb0p">
+                                                                                                        <div class="_7eq2v2">Voyageurs</div>
+                                                                                                        <div class="_7pspom" id="GuestPicker-book_it-trigger" aria-invalid="false" aria-disabled="false">
+                                                                                                            <div class="_1ir6ymk">
+                                                                                                                <span class="_j1kt73">1 voyageur</span>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </label>
+                                                                                                    <div class="_lmil0">
+                                                                                                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                                                                                            <g fill="none">
+                                                                                                                <path d="m28 12-11.2928932 11.2928932c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-11.2928932-11.2928932"></path>
+                                                                                                            </g>
+                                                                                                        </svg>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="_t26glb" style="inset: 0px 0px -1px; border-radius: 0px 0px 8px 8px; border-top-color: var(--comboInputGroup_borderColor, var(--iw-ihca)); border-right-color: var(--comboInputGroup_borderColor, var(--iw-ihca)); border-bottom-color: var(--comboInputGroup_borderColor, var(--iw-ihca)); border-left-color: var(--comboInputGroup_borderColor, var(--iw-ihca)); border-width: 1px; z-index: 0;"></div>
+                                                                                            </div>
+                                                                                            <div></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="_fz3zdn">
+                                                                        <div class=" dir dir-ltr">
+                                                                            <button data-testid="homes-pdp-cta-btn" type="button" class="_qqb2vcb">
+                                                                                <span class="tjxdvlu dir dir-ltr">
+                                                                                    <span class="t12u7nq4 dir dir-ltr" style="background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%);"></span>
+                                                                                </span>
+                                                                                <span class="c4wd1yj dir dir-ltr">Réserver </span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <ul class="_1mkur1q">
+                                                                    <li class="_qqc9rm">Aucun montant ne vous sera débité pour le moment</li>
+                                                                </ul>
+                                                                <div class="_1cvivhm">
+                                                                    <div class="_1wpjhdm" style="--pricing-guest-display-price-alignment:flex-start; --pricing-guest-display-price-flex-wrap:wrap; --pricing-guest-primary-line-font-size:16px; --pricing-guest-primary-line-line-height:20px; --pricing-guest-primary-line-unit-price-font-weight:800; --pricing-guest-primary-line-trailing-content-font-size:14px; --pricing-guest-secondary-line-font-size:14px; --pricing-guest-secondary-line-line-height:18px; --pricing-guest-secondary-line-color:#717171; --pricing-guest-explanation-disclaimer-font-size:14px; --pricing-guest-explanation-disclaimer-line-height:18px; --pricing-guest-primary-line-strikethrough-price-font-weight:600; --pricing-guest-primary-line-qualifier-font-size:16px; --pricing-guest-primary-line-qualifier-line-height:20px;">
+                                                                        <section>
+                                                                            <div class="_18x0pkv">
+                                                                                <div class="_1fpuhdl">
+                                                                                    <span class="_18x3iiu">
+                                                                                        <div class="_10d7v0r">
+                                                                                            <button type="button" class="_101nvu7m">
+                                                                                                <div class="_m6lwl6">334&nbsp;€ x 5 nuits</div>
+                                                                                                <span class="a8jt5op dir dir-ltr">Afficher le détail du prix</span>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <span class="_1k4xcdh">1 672&nbsp;€</span>
+                                                                                </div>
+                                                                                <div class="_1fpuhdl">
+                                                                                    <span class="_18x3iiu">
+                                                                                        <div class="_10d7v0r">
+                                                                                            <button type="button" class="_101nvu7m">
+                                                                                                <div class="_m6lwl6">Frais de ménage</div>
+                                                                                                <span class="a8jt5op dir dir-ltr">Afficher le détail du prix</span>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <span class="_1k4xcdh">50&nbsp;€</span>
+                                                                                </div>
+                                                                                <div class="_1fpuhdl">
+                                                                                    <span class="_18x3iiu">
+                                                                                        <div class="_10d7v0r">
+                                                                                            <button type="button" class="_101nvu7m">
+                                                                                                <div class="_m6lwl6">Frais de service</div>
+                                                                                                <span class="a8jt5op dir dir-ltr">Afficher le détail du prix</span>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <span class="_1k4xcdh">292&nbsp;€</span>
+                                                                                </div>
+                                                                                <div class="_1fpuhdl">
+                                                                                    <span class="_18x3iiu">
+                                                                                        <div class="_10d7v0r">
+                                                                                            <button type="button" class="_101nvu7m">
+                                                                                                <div class="_m6lwl6">Taxes de séjour et frais</div>
+                                                                                                <span class="a8jt5op dir dir-ltr">Afficher le détail du prix</span>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <span class="_1k4xcdh">326&nbsp;€</span>
+                                                                                </div>
+                                                                                <div class="_1emnh212">
+                                                                                    <div class="_1qh0b5n">
+                                                                                        <span class="_18x3iiu">
+                                                                                            <div>Total</div>
+                                                                                        </span>
+                                                                                        <span class="_1k4xcdh">2 340&nbsp;€</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c1yo0219 dir dir-ltr">
+                                        <div style="--gp-section-max-width:1120px;">
+                                            <div style="margin-top: 24px; --gp-section-top-margin:24;">
+                                                <div style="border: 1px solid rgb(221, 221, 221); border-radius: 12px; padding: 24px;">
+                                                    <div data-plugin-in-point-id="URGENCY_COMMITMENT_SIDEBAR" data-section-id="URGENCY_COMMITMENT_SIDEBAR">
+                                                        <div class="_1a20785">
+                                                            <div class="_xomkrgi">
+                                                                <div class="_psmgei">
+                                                                    <h2 class="_mtn6h9x">C'est une perle rare.</h2>
+                                                                    <span class="_1hgrncy">Les réservations Airbnb chez Michelle sont souvent complètes.</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="_wjmxoe">
+                                                                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 32px; width: 32px; fill: rgb(227, 28, 95); stroke: currentcolor;">
+                                                                    <g stroke="none">
+                                                                        <path d="m32.62 6 9.526 11.114-18.146 23.921-18.147-23.921 9.526-11.114z" fill-opacity=".2"></path>
+                                                                        <path d="m34.4599349 2 12.8243129 14.9616983-23.2842478 30.6928721-23.28424779-30.6928721 12.82431289-14.9616983zm-17.9171827 16h-12.52799999l18.25899999 24.069zm27.441 0h-12.528l-5.73 24.069zm-14.583 0h-10.802l5.4012478 22.684zm-15.92-12.86-9.30799999 10.86h11.89399999zm19.253-1.141h-17.468l2.857 12.001h11.754zm1.784 1.141-2.586 10.86h11.894z"></path>
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c1yo0219 dir dir-ltr">
+                                        <div style="--gp-section-max-width:1120px;">
+                                            <div style="margin-top: 24px; --gp-section-top-margin:24;">
+                                                <div data-plugin-in-point-id="REPORT_TO_AIRBNB" data-section-id="REPORT_TO_AIRBNB">
+                                                    <div class="c1fhr3yj dir dir-ltr">
+                                                        <button data-testid="user-flag-report-button" type="button" class="b1k5q1b3 v18vkvko dir dir-ltr">
+                                                            <span class="atm_h_1h6ojuz atm_9s_1txwivl atm_7l_12u4tyr atm_bx_1ltc5j7 atm_cs_qo5vgd atm_c8_fkimz8 atm_g3_11yl58k dir dir-ltr">
+                                                                <span class="atm_h0_exct8b dir dir-ltr">
+                                                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                                                                        <path d="M28 6H17V4a2 2 0 0 0-2-2H3v28h2V18h10v2a2 2 0 0 0 2 2h11l.115-.006a1 1 0 0 0 .847-1.269L27.039 14l1.923-6.724A1 1 0 0 0 28 6z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                                Signaler cette annonce
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
+
